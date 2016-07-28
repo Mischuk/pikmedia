@@ -3,12 +3,12 @@
 ## Демо
 Смотреть: [frontende.info/pikmedia](http://frontende.info/pikmedia)
 
-Скачать: [master.zip](https://github.com/Mischuk/pikmedia/archive/master.zip)
+Скачать: [pikmedia-master.zip](https://github.com/Mischuk/pikmedia/archive/master.zip)
 
 ## Описание
 * Сборщик [Gulp](http://gulpjs.com/)
-* Шаблонизатор [Jade](https://www.npmjs.com/package/gulp-jade)
-* Препроцессор [Stylus](https://www.npmjs.com/package/gulp-stylus) ([карты кода](https://www.npmjs.com/package/gulp-sourcemaps), [rupture для media queries](http://jescalan.github.io/rupture/), [jeet сетка](http://jeet.gs/))
+* Шаблонизатор [Jade](http://jade-lang.com/)
+* Препроцессор [Stylus](http://stylus-lang.com/) ([карты кода](https://www.npmjs.com/package/gulp-sourcemaps), [rupture для media queries](http://jescalan.github.io/rupture/), [jeet сетка](http://jeet.gs/))
 * [Сервер](https://www.npmjs.com/package/gulp-connect) с livereload
 * CSS: добавление [вендорных префиксов](https://www.npmjs.com/package/autoprefixer-stylus), форматирование [csscomb](https://www.npmjs.com/package/gulp-csscomb), минификация [csso](https://www.npmjs.com/package/gulp-csso)
 * HTML: форматирование [html-prettify](https://www.npmjs.com/package/gulp-html-prettify), сортировка атрибутов [AttrsSorter](https://www.npmjs.com/package/posthtml-attrs-sorter)
@@ -24,6 +24,7 @@
 * Установить gulp глобально (один раз!): `npm i -g gulp`
 * Установить зависимости (1 раз на проект): `npm i`
 * Запустить gulp: `gulp dev`
+
 Проект будет доступен по адресу [`http://localhost:8080/`](http://localhost:8080/)
 
 ## Основные таски
