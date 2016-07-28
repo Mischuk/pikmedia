@@ -1,0 +1,44 @@
+extends ../modules/layout/layout.jade
+
+block title
+  title Галерея (Фото)
+
+block content
+  .main
+    .container
+      .row
+        .col-sm-12
+          // Breadcrumbs
+          -
+            var breadcrumbs = [
+              { title: 'Галерея'},
+              { title: 'Фотогалерея'},
+              { title: 'RZR CAMP 2016 I этап Москва, 28-29 мая, Side-by-Side'}
+            ]
+          include ../modules/breadcrumbs/m_breadcrumbs
+          // Gallery
+          .m_gallery
+            .page-title Фотогалерея
+            form.search
+              input.text(type="text", placeholder="Поиск по номеру")
+              button(type="submit").submit
+            .gallery-title RZR CAMP 2016 I этап Москва, 28-29 мая, Side-by-Side
+            .list-images#lightgallery
+              .item: a(href="assets/images/gallery/1.png"): .image(style="background-image: url('assets/images/gallery/1.png')")
+              .item: a(href="assets/images/gallery/2.png"): .image(style="background-image: url('assets/images/gallery/2.png')")
+              .item: a(href="assets/images/gallery/1.png"): .image(style="background-image: url('assets/images/gallery/1.png')")
+              .item: a(href="assets/images/gallery/3.png"): .image(style="background-image: url('assets/images/gallery/3.png')")
+              .item: a(href="assets/images/gallery/2.png"): .image(style="background-image: url('assets/images/gallery/2.png')")
+              .item: a(href="assets/images/gallery/1.png"): .image(style="background-image: url('assets/images/gallery/1.png')")
+              .item: a(href="assets/images/gallery/2.png"): .image(style="background-image: url('assets/images/gallery/2.png')")
+              .item: a(href="assets/images/gallery/3.png"): .image(style="background-image: url('assets/images/gallery/3.png')")
+              .item: a(href="assets/images/gallery/2.png"): .image(style="background-image: url('assets/images/gallery/2.png')")
+              .item: a(href="assets/images/gallery/3.png"): .image(style="background-image: url('assets/images/gallery/3.png')")
+              .item: a(href="assets/images/gallery/1.png"): .image(style="background-image: url('assets/images/gallery/1.png')")
+              .item: a(href="assets/images/gallery/2.png"): .image(style="background-image: url('assets/images/gallery/2.png')")
+              .item: a(href="assets/images/gallery/3.png"): .image(style="background-image: url('assets/images/gallery/3.png')")
+              .item: a(href="assets/images/gallery/2.png"): .image(style="background-image: url('assets/images/gallery/2.png')")
+              .item: a(href="assets/images/gallery/3.png"): .image(style="background-image: url('assets/images/gallery/3.png')")
+              .item: a(href="assets/images/gallery/1.png"): .image(style="background-image: url('assets/images/gallery/1.png')")
+              .item: a(href="assets/images/gallery/2.png"): .image(style="background-image: url('assets/images/gallery/2.png')")
+              .item: a(href="assets/images/gallery/1.png"): .image(style="background-image: url('assets/images/gallery/1.png')")
