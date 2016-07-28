@@ -1,7 +1,9 @@
 # Pikmedia
 
 ## Демо
-[frontende.info/pikmedia](http://frontende.info/pikmedia)
+Смотреть: [frontende.info/pikmedia](http://frontende.info/pikmedia)
+
+Скачать: [master.zip](https://github.com/Mischuk/pikmedia/archive/master.zip)
 
 ## Описание
 * Сборщик [Gulp](http://gulpjs.com/)
@@ -17,37 +19,12 @@
 ## Быстрый старт
 
 * Установить [node.js](https://nodejs.org)
-* Зайти в папку с установленной nodejs и обновить npm до последней версии
-
-	```bash
-	npm install npm@latest
-	```
-
-* Склонировать проект либо [скачать архив](https://github.com/Mischuk/pikmedia/archive/master.zip)
-
-	```bash
-	git clone git@github.com:Mischuk/pikmedia.git my-project && cd my-project
-	```
-
-* Установить `gulp` глобально (один раз!)
-
-	```bash
-	npm i -g gulp
-	```
-
-* Установить зависимости (1 раз на проект)
-
-	```bash
-	npm i
-	```
-
-* Запустить `gulp`
-
-	```bash
-	gulp dev
-	```
-
-* Проект будет доступен по адресу [`http://localhost:8080/`](http://localhost:8080/)
+* Зайти в папку с установленной nodejs и обновить npm до последней версии: `npm install npm@latest`
+* Склонировать или [скачать](https://github.com/Mischuk/pikmedia/archive/master.zip) проект
+* Установить gulp глобально (один раз!): `npm i -g gulp`
+* Установить зависимости (1 раз на проект): `npm i`
+* Запустить gulp: `gulp dev`
+Проект будет доступен по адресу [`http://localhost:8080/`](http://localhost:8080/)
 
 ## Основные таски
 
@@ -69,7 +46,7 @@ frontend/                               # Корень проекта
 │       ├── images                      # Изображения
 │       ├── js                          # JavaScript файлы
 │       │   ├── plugins                 # Плагины (css+js)
-│       │   ├── jquery.min              # jQuery
+│       │   ├── jquery.min.js           # jQuery
 │       │   └── main.js                 # Точка сборки скриптов
 │       └── styl                        # Статичные стили
 │           ├── base                    # Базовые стили
