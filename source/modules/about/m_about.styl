@@ -1,0 +1,63 @@
+.m_about
+  position relative
+  height 750px
+  @media screen and (max-width: 992px)
+    height 700px
+  @media screen and (max-width: 640px)
+    height auto
+    padding-bottom 70px
+  .image
+    &:before
+      pseudo-dark-bg(0.8)
+  .intro
+    position relative
+    z-index 10
+    color #fff
+    text-align center
+  .mouse
+    position absolute
+    left 50%
+    bottom 40px
+    width 20px
+    height 30px
+    background url("../images/mouse.png") no-repeat 0 0
+    cursor pointer
+    animation mouse 1s infinite linear
+    z-index 10
+    html.touchevents &
+      display none
+    @media screen and (max-height: 750px)
+      display none
+  .heading-large
+    color #fff
+    text-align center
+    heading-line()
+  .navs
+    margin-bottom 100px
+    @media screen and (max-width: 640px)
+      margin-bottom 50px
+    ul
+      cursor default
+    li
+      display inline-block
+      vertical-align middle
+      margin 8px
+      a
+        anim()
+        border-bottom 1px solid $blue-half
+        &:hover
+          text-decoration none
+          color #fff
+          border-color #fff
+  .description
+    font-size 32px
+    line-height 42px
+    font-weight 300
+    @media screen and (max-width: 992px)
+      font-size 28px
+      line-height 1.5
+      br
+        display none
+    @media screen and (max-width: 380px)
+      font-size 24px
+

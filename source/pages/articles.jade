@@ -1,0 +1,47 @@
+extends ../modules/layout/layout.jade
+
+block title
+  title Наши публикации
+
+block content
+  .main
+    .m_breadcrumbs
+      .container-fluid
+        ul
+          li: a(href="#") Главная
+          li: a(href="#") Агенство
+          li: a(href="#") Публикации
+    main
+      .container-fluid
+        .content
+          .m_news
+            .section-title.border.left.medium
+              h2 Наши публикации
+            .section-description Мы публикуем статьи на профессиональных ресурсах. <br> Делимся опытом и высказываем свое мнение по  актуальным вопросам интернет-маркетинга
+            .list
+              .row
+                - for (var x = 0; x < 15; x++)
+                  .col-sm-4.col-xs-6
+                    .title: a(href="#"): span Практика разработки целевой страницы (landing page) для малого бизнеса
+                    .paragraph.small В этой статье мы поделимся с коллегами нашим опытом создания целевых страниц или landing page. Часто применяют термин «посадочные страницы», но, на наш взгляд, «целевая страница» гораздо лучше отражает суть этого инструмента.
+                    .tags
+                      .tag: a(href="#") cmsmagazine.ru
+            .m_pagination
+              ul
+                li: button.prev: i.icon-arrow
+                li: a(href="#") 1
+                li: a(href="#") 2
+                li: a(href="#") 3
+                li.current: a(href="#") 4
+                li: a(href="#") 5
+                li: a(href="#") 6
+                li: a(href="#") 7
+                li: button.next: i.icon-arrow
+        .sidebar.small-radius
+          ul
+            li: a(href="#"): span Об агентстве
+            li: a(href="#"): span Кейсы наших клиентов
+            li.current: a(href="#"): span Наши публикации
+            li: a(href="#"): span Отзывы наших клиентов
+            li: a(href="#"): span Новости
+            li: a(href="#"): span Контакты

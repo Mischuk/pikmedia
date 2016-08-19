@@ -1,2 +1,69 @@
+// Modals: Form
+#modal.zoom-anim-dialog.mfp-hide
+  .modal-wrap
+    .section-title.small.border.medium: h2 Оставить заявку
+    form#form-modal
+      label
+        .input.required: input.text(type="text" placeholder="Имя")
+      label
+        .input.required: input.text(type="email" placeholder="Email")
+      label
+        .input.required: input.text(type="tel" placeholder="Телефон")
+      label
+        .input: textarea(placeholder="Комментарий")
+      .checkbox
+        input(id="type-1" type="checkbox" name="type-1")
+        label(for="type-1")
+          span.icon
+          span.label Индивидуальная разработка
+      .checkbox
+        input(id="type-2" type="checkbox" name="type-2" checked="checked")
+        label(for="type-2")
+          span.icon
+          span.label Шаблонное решение
+      .submit: button(type="submit").btn-blue-border Отправить
+// Modals: Success
+a(href="#modal-success").modal-trigger.modal-success
+#modal-success.zoom-anim-dialog.mfp-hide
+  .modal-wrap
+    .section-title.medium: h2 Спасибо!<br>Ваша заявка отправлена!
+
+
 // Header
-header.m_header header
+header.m_header.preload
+  .container-fluid
+    .logo
+      a(href="#")
+    nav.nav
+      ul
+        li.current
+          a(href="#")
+            span Агентство
+          ul.dropdown
+            li: a(href="#") Об агентстве
+            li: a(href="#") Наши публикации
+            li: a(href="#") Отзывы наших клиентов
+            li: a(href="#") Новости
+        li
+          a(href="#")
+            span Услуги
+          ul.dropdown
+            li: a(href="#") Об услугах
+            li: a(href="#") Наши Услуги
+            li: a(href="#") Отзывы об услугах
+            li: a(href="#") Об услугах
+            li: a(href="#") Наши Услуги
+            li: a(href="#") Отзывы об услугах
+        li: a(href="#"): span Портфолио
+        li: a(href="#"): span кейсы
+        li: a(href="#"): span Контакты
+    .contacts
+      .address
+        address +7 (812) 363-49-59
+      .callback
+        a(href="#modal" data-modal-heading="Оставить заявку").btn-blue.modal-trigger Оставить заявку
+    .mobile-menu-trigger: span
+
+
+
+

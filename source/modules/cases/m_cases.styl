@@ -1,0 +1,73 @@
+.m_cases
+  position relative
+  .vertical-outer
+    position relative
+    z-index 10
+  .cases
+    @media screen and (max-width: 768px)
+      margin-top 30px
+  .case
+    position relative
+    height 350px
+    padding-left 30px
+    padding-right 30px
+    color #fff
+    margin-bottom 30px
+    @media screen and (max-width: 768px)
+      margin-bottom 15px
+    @media screen and (max-width: 380px)
+      padding-left 15px
+      padding-right 15px
+    &.large
+      height 450px
+      @media screen and (max-width: 768px)
+        height 400px
+    &.small
+      padding 0
+      color #000
+      @media screen and (max-width: 768px)
+        height 180px
+        padding-left 230px
+      @media screen and (max-width: 568px)
+        height auto
+        padding-left 0
+      .image
+        position relative
+        height 180px
+        margin-bottom 5px
+        @media screen and (max-width: 768px)
+          position absolute
+          left 0
+          top 0
+          width 215px
+        @media screen and (max-width: 568px)
+          position relative
+          width 100%
+      .title
+        padding-bottom 0
+        margin-bottom 10px
+      .paragraph
+        @media screen and (max-width: 768px)
+          margin-bottom 15px
+    &:hover
+      .image:before
+        pseudo-dark-bg(0.8)
+    .image
+      &:before
+        anim()
+        pseudo-dark-bg(0.7)
+    .title
+      font-size: 24px;
+      line-height: 36px;
+      color: #fff;
+      margin-bottom: 70px;
+      heading-line()
+      @media screen and (max-width: 380px)
+        line-height 1.2
+        font-size 21px
+      &:after
+        margin-left 0
+        left 0
+      link-blue()
+    .paragraph
+      margin-bottom 30px

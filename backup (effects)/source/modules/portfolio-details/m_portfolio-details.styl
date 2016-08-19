@@ -1,0 +1,122 @@
+.m_portfolio-details
+  .client
+    position relative
+    height 1024px
+    @media screen and (max-width: 992px)
+      height 750px
+    @media screen and (max-width: 640px)
+      height auto
+    .container-fluid
+      @media screen and (max-width: 640px)
+        padding-left 0
+        padding-right 0
+    .header
+      background rgba(0,0,0,.6)
+      color #fff
+      .site
+        margin-top 35px
+        @media screen and (max-width: 640px)
+          margin-top 15px
+        a:hover
+          color #fff
+          text-decoration underline
+    .image
+      @media screen and (max-width: 640px)
+        height 600px
+      @media screen and (max-width: 380px)
+        height 380px
+    .about
+      position absolute
+      left 0
+      bottom 70px
+      width 100%
+      padding 30px
+      background rgba(255,255,255,.9)
+      @media screen and (max-width: 1250px)
+        width 96%
+        left 2%
+        bottom 2%
+        padding 2%
+      @media screen and (max-width: 640px)
+        position static
+        width 100%
+        margin-top 600px
+        padding 30px 15px
+      @media screen and (max-width: 380px)
+        margin-top 380px
+  .task
+    background $blue
+    color #fff
+    .title, .desc
+      padding 0 15px
+      @media screen and (max-width: 1250px)
+        padding 0 2.5%
+      @media screen and (max-width: 640px)
+        padding 0
+  .proccess
+    padding-top 20px
+    @media screen and (max-width: 640px)
+      padding-top 0
+    p
+      @media screen and (max-width: 1250px)
+        padding 0 2.5%
+      @media screen and (max-width: 640px)
+        padding 0
+    .full-image
+      height 600px
+      @media screen and (max-width: 640px)
+        height 400px
+
+  .result
+    padding-bottom 20px
+    margin-bottom 30px
+    border-bottom 1px solid #dcdcdc
+    .stack-images
+      .image
+        height 555px
+        overflow hidden
+        border-radius 5px
+        border 1px solid #dcdcdc
+        img
+          width 100%
+          height auto
+      .paragraph
+        padding-top 15px
+        @media screen and (max-width: 768px)
+          margin-bottom 30px
+  .client-resource
+    background #f5f5f5
+    margin-top -31px
+    text-align center
+    font-size 32px
+    line-height 1
+    @media screen and (max-width: 568px)
+      font-size 28px
+    @media screen and (max-width: 380px)
+      font-size 24px
+    .title
+      margin-bottom 10px
+    .site
+      margin-bottom 20px
+      a
+        color $blue
+    .action
+      .btn-blue
+        color $blue
+        padding 20px 50px
+        width auto
+        height auto
+        color #fff
+        border-radius 60px
+        font-size 14px
+        font-weight 600
+        border-width 2px
+        @media screen and (max-width: 568px)
+          padding 10px 20px
+          line-height 1
+        br
+          display none
+          @media screen and (max-width: 568px)
+            display block
+        &:hover, &:focus
+          color $blue

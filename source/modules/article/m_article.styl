@@ -1,0 +1,81 @@
+.m_article
+  padding-bottom 30px
+  h2, h3, h4, h5
+    font-weight 600
+    line-height 1.1
+    margin 1em 0
+  h2
+    font-size 32px
+  h3
+    font-size 24px
+  h4
+    font-size 18px
+  h5
+    font-size 16px
+  img
+    max-width 100%
+    width 100%
+    height auto
+    margin-bottom 1em
+  p
+    font-size 16px
+    line-height 24px
+    margin-top 0
+    margin-bottom 1em
+    i
+      font-family 'Open Sans', sans-serif !important
+      font-style italic
+  ul
+    li
+      position relative
+      padding-left 30px
+      margin-bottom 1em
+      &:before
+        content ">"
+        font-weight 700
+        line-height 16px
+        color $blue
+        position absolute
+        left 0
+        top 0
+        font-size 14px
+  ol
+    counter-reset my-badass-counter
+    li
+      position relative
+      padding-left 30px
+      margin-bottom 1em
+      &:before
+        content counter(my-badass-counter) '.'
+        counter-increment my-badass-counter
+        color $blue
+        position absolute
+        left 0
+        top 1px
+        line-height 16px
+  .date
+    font-size 14px
+    line-height 1
+    color #828282
+  a
+    anim()
+    color $blue
+    border-bottom 1px solid $blue-half
+    &:hover
+      border-color transparent
+      text-decoration none
+      color #000
+  .external
+    a
+      border none
+      span
+        anim()
+        border-bottom 1px solid $blue-half
+        &:hover
+          color #000
+          border-color transparent
+          text-decoration none
+    i
+      font-size: 8px;
+      position: relative;
+      top: -2px;

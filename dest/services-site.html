@@ -1,0 +1,561 @@
+<!DOCTYPE html>
+<html class="js" lang="ru">
+
+	<head>
+		<title>Индивидуальная разработка сайтов</title>
+		<meta charset="UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta name="msapplication-tap-highlight" content="no">
+		<link type="image/x-icon" href="favicon.ico" rel="icon">
+		<link type="text/css" href="https://fonts.googleapis.com/css?family=Open+Sans:400,400italic,300,600,700&amp;subset=latin,cyrillic" rel="stylesheet">
+		<link href="styles/plugins.css" rel="stylesheet">
+		<link href="styles/app.css" rel="stylesheet">
+		<script src="js/modernizr.js"></script>
+	</head>
+
+	<body style="overflow: hidden">
+		<!-- Modals: Form-->
+		<div class="zoom-anim-dialog mfp-hide" id="modal">
+			<div class="modal-wrap">
+				<div class="section-title small border medium">
+					<h2>Оставить заявку</h2>
+				</div>
+				<form id="form-modal">
+					<label>
+						<div class="input required">
+							<input class="text" type="text" placeholder="Имя">
+						</div>
+					</label>
+					<label>
+						<div class="input required">
+							<input class="text" type="email" placeholder="Email">
+						</div>
+					</label>
+					<label>
+						<div class="input required">
+							<input class="text" type="tel" placeholder="Телефон">
+						</div>
+					</label>
+					<label>
+						<div class="input">
+							<textarea placeholder="Комментарий"></textarea>
+						</div>
+					</label>
+					<div class="checkbox">
+						<input id="type-1" name="type-1" type="checkbox">
+						<label for="type-1">
+							<span class="icon"></span>
+							<span class="label">Индивидуальная разработка</span>
+						</label>
+					</div>
+					<div class="checkbox">
+						<input id="type-2" name="type-2" type="checkbox" checked="checked">
+						<label for="type-2">
+							<span class="icon"></span>
+							<span class="label">Шаблонное решение</span>
+						</label>
+					</div>
+					<div class="submit">
+						<button class="btn-blue-border" type="submit">Отправить</button>
+					</div>
+				</form>
+			</div>
+		</div>
+		<!-- Modals: Success-->
+		<a class="modal-trigger modal-success" href="#modal-success"></a>
+		<div class="zoom-anim-dialog mfp-hide" id="modal-success">
+			<div class="modal-wrap">
+				<div class="section-title medium">
+					<h2>Спасибо!
+						<br>Ваша заявка отправлена!</h2>
+				</div>
+			</div>
+		</div>
+		<!-- Header-->
+		<header class="m_header preload">
+			<div class="container-fluid">
+				<div class="logo">
+					<a href="#"></a>
+				</div>
+				<nav class="nav">
+					<ul>
+						<li class="current">
+							<a href="#">
+								<span>Агентство</span>
+							</a>
+							<ul class="dropdown">
+								<li>
+									<a href="#">Об агентстве</a>
+								</li>
+								<li>
+									<a href="#">Наши публикации</a>
+								</li>
+								<li>
+									<a href="#">Отзывы наших клиентов</a>
+								</li>
+								<li>
+									<a href="#">Новости</a>
+								</li>
+							</ul>
+						</li>
+						<li>
+							<a href="#">
+								<span>Услуги</span>
+							</a>
+							<ul class="dropdown">
+								<li>
+									<a href="#">Об услугах</a>
+								</li>
+								<li>
+									<a href="#">Наши Услуги</a>
+								</li>
+								<li>
+									<a href="#">Отзывы об услугах</a>
+								</li>
+								<li>
+									<a href="#">Об услугах</a>
+								</li>
+								<li>
+									<a href="#">Наши Услуги</a>
+								</li>
+								<li>
+									<a href="#">Отзывы об услугах</a>
+								</li>
+							</ul>
+						</li>
+						<li>
+							<a href="#">
+								<span>Портфолио</span>
+							</a>
+						</li>
+						<li>
+							<a href="#">
+								<span>кейсы</span>
+							</a>
+						</li>
+						<li>
+							<a href="#">
+								<span>Контакты</span>
+							</a>
+						</li>
+					</ul>
+				</nav>
+				<div class="contacts">
+					<div class="address">
+						<address>+7 (812) 363-49-59</address>
+					</div>
+					<div class="callback">
+						<a class="btn-blue modal-trigger" data-modal-heading="Оставить заявку" href="#modal">Оставить заявку</a>
+					</div>
+				</div>
+				<div class="mobile-menu-trigger">
+					<span></span>
+				</div>
+			</div>
+		</header>
+		<div class="m_full-section">
+			<div class="m_breadcrumbs">
+				<div class="container-fluid">
+					<ul>
+						<li>
+							<a href="#">Главная</a>
+						</li>
+						<li>
+							<a href="#">Услуги</a>
+						</li>
+						<li>
+							<a href="#">Разработка сайтов</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+			<div class="m_personal-develop">
+				<div class="container-fluid full-height">
+					<div class="vertical-outer">
+						<div class="vertical-inner">
+							<div class="intro center space-extra-large">
+								<h1 class="heading-large">Индивидуальная
+									<br class="xs-visible">разработка сайтов</h1>
+								<div class="paragraph large light">Мы разрабатываем целевые страницы, корпоративные сайты, интернет-магазины и промо-сайты</div>
+							</div>
+							<div class="tabs small-radius small-shadow">
+								<div class="tabs-nav">
+									<div class="item current">
+										<a href="#">Корпоративный сайт</a>
+									</div>
+									<div class="item">
+										<a href="#">Интернет-магазин</a>
+									</div>
+									<div class="item">
+										<a href="#">Промо-сайт</a>
+									</div>
+									<div class="item">
+										<a href="#">Целевая страница</a>
+									</div>
+								</div>
+								<div class="tabs-content center">
+									<div class="item current">
+										<div class="paragraph large light">многостраничный сайт для повышения имиджа и привлечения новых клиентов</div>
+									</div>
+									<div class="item">
+										<div class="paragraph large light">2 многостраничный сайт для повышения имиджа и привлечения новых клиентов</div>
+									</div>
+									<div class="item">
+										<div class="paragraph large light">3 многостраничный сайт для повышения имиджа и привлечения новых клиентов</div>
+									</div>
+									<div class="item">
+										<div class="paragraph large light">4 многостраничный сайт для повышения имиджа и привлечения новых клиентов</div>
+									</div>
+								</div>
+							</div>
+							<div class="lead-prices space-large center paragraph large light">
+								<p>Стоимость разработки корпоративного сайта на шаблонном решении
+									<b>от 15 000 руб.</b>
+								</p>
+								<p>Стоимость корпоративного сайта
+									<b>от 90 000 руб.</b>
+								</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="m_gift">
+				<div class="container-fluid full-height">
+					<div class="vertical-outer">
+						<div class="vertical-inner">
+							<div class="lead">Запросите расчет стоимости и получите
+								<br>прототип главной страницы
+								<b>в подарок!</b>
+							</div>
+							<div class="action">
+								<a class="btn-blue modal-trigger" data-modal-heading="Получить смету" href="#modal">Получить смету</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="main">
+			<div class="m_personal-develop-proccess">
+				<div class="container-fluid">
+					<div class="section-title border">
+						<h2>Как мы работаем</h2>
+					</div>
+					<article>
+						<div class="heading-medium center">Сбор и анализ информации</div>
+						<div class="paragraph medium center">Прежде чем приступить к работе, мы собираем и анализируем информацию, которая необходима для выполнения проекта.
+							<br>
+							<br> На этом важном этапе закладывается основание проекта.</div>
+						<div class="steps center">
+							<div class="title">Основные решения, принимаемые на этом этапе:</div>
+							<div class="row">
+								<div class="col-sm-3 col-xs-6">
+									<div class="item">
+										<div class="icons">
+											<i class="icon-step-1"></i>
+										</div>
+										<div class="desc">Цели и задачи сайта</div>
+									</div>
+								</div>
+								<div class="col-sm-3 col-xs-6">
+									<div class="item">
+										<div class="icons">
+											<i class="icon-step-2"></i>
+										</div>
+										<div class="desc">Структура сайта и его
+											<br>возможности</div>
+									</div>
+								</div>
+								<div class="col-sm-3 col-xs-6">
+									<div class="item">
+										<div class="icons">
+											<i class="icon-step-3"></i>
+										</div>
+										<div class="desc">Контент</div>
+									</div>
+								</div>
+								<div class="col-sm-3 col-xs-6">
+									<div class="item">
+										<div class="icons">
+											<i class="icon-step-4"></i>
+										</div>
+										<div class="desc">Технические решения</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</article>
+				</div>
+			</div>
+			<div class="m_lead-cases">
+				<div class="image full-abs" style="background-image: url('images/services-bg-1.jpg')"></div>
+				<div class="case small center">
+					<div class="vertical-outer">
+						<div class="vertical-inner">
+							<h2 class="medium">Cоздаем прототип вашего будущего сайта</h2>
+							<div class="paragraph large light large-lh">Это помогает нам сделать зрелый, продуманный до мелочей проект, который не нужно будет переделывать через пару месяцев. Именно проектирование снижает стоимость и сокращает сроки всех следующих этапов разработки сайта.</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="m_lead-cases">
+				<div class="image full-abs" style="background-image: url('images/services-bg-2.jpg')"></div>
+				<div class="case small center">
+					<div class="vertical-outer">
+						<div class="vertical-inner">
+							<h2 class="medium">На этапе дизайна сайт приобретает законченный вид</h2>
+							<div class="paragraph large light large-lh">Все элементы и детали интерфейса досконально прорабатываются и гармонично вписываются в единую концепцию проекта. Мы презентуем концепцию дизайна только при личной встрече.</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="m_personal-develop-proccess">
+				<div class="container-fluid">
+					<div class="section-title border">
+						<h2 class="small">Невидимая для клиента часть работы</h2>
+					</div>
+					<article>
+						<div class="paragraph center medium">Верстка и программирование выполняется строго по внутренним регламентам
+							<br>на основе согласованного тех. задания и сроков договора. На этих этапах мы запрашиваем
+							<br>у клиентов контент для тестового размещения.</div>
+						<div class="steps center">
+							<div class="row">
+								<div class="col-sm-4 col-sm-offset-2">
+									<div class="item">
+										<div class="icons">
+											<i class="icon-hidden-1"></i>
+										</div>
+										<div class="desc">Большую часть проектов мы реализуем
+											<br>с помощью 1C:Битрикс, UMI CMS и WordPress</div>
+									</div>
+								</div>
+								<div class="col-sm-4">
+									<div class="item">
+										<div class="icons">
+											<i class="icon-hidden-2"></i>
+										</div>
+										<div class="desc">Опыт наших сотрудников и новейшие технологии позволяют реализовывать проекты любой сложности.</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</article>
+				</div>
+			</div>
+			<div class="m_lead-cases">
+				<div class="image full-abs" style="background-image: url('images/services-bg-3.jpg')"></div>
+				<div class="case small center">
+					<div class="vertical-outer">
+						<div class="vertical-inner">
+							<h2 class="medium">Мы применяем 2-х ступенчатую систему тестирования</h2>
+							<div class="paragraph large light large-lh">Данный подход позволяет оперативно устранить возможные шероховатости
+								<br>и представить клиентам полностью законченный проект.</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="m_personal-develop clear">
+				<div class="container-fluid">
+					<div class="intro">
+						<div class="section-title border">
+							<h2 class="small">Разработка программных интернет решений</h2>
+						</div>
+						<div class="paragraph large light large-lh">Мы разрабатываем целевые страницы, корпоративные сайты, интернет-магазины и промо-сайты</div>
+					</div>
+					<div class="tabs">
+						<div class="tabs-nav">
+							<div class="item current">
+								<a href="#">Корпоративный сайт</a>
+							</div>
+							<div class="item">
+								<a href="#">Интернет-магазин</a>
+							</div>
+							<div class="item">
+								<a href="#">Промо-сайт</a>
+							</div>
+							<div class="item">
+								<a href="#">Целевая страница</a>
+							</div>
+						</div>
+						<div class="tabs-content center">
+							<div class="item current">
+								<div class="paragraph large light">многостраничный сайт для повышения имиджа и привлечения новых клиентов</div>
+							</div>
+							<div class="item">
+								<div class="paragraph large light">2 многостраничный сайт для повышения имиджа и привлечения новых клиентов</div>
+							</div>
+							<div class="item">
+								<div class="paragraph large light">3 многостраничный сайт для повышения имиджа и привлечения новых клиентов</div>
+							</div>
+							<div class="item">
+								<div class="paragraph large light">4 многостраничный сайт для повышения имиджа и привлечения новых клиентов</div>
+							</div>
+						</div>
+					</div>
+					<div class="lead-prices">
+						<div class="paragraph large light center">Стоимость разработки корпоративного сайта на шаблонном решении
+							<b>от 15 000 руб.</b>
+						</div>
+						<div class="paragraph large light center">Стоимость корпоративного сайта
+							<b>от 90 000 руб.</b>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="m_gift">
+				<div class="container-fluid full-height">
+					<div class="vertical-outer">
+						<div class="vertical-inner">
+							<div class="lead">Запросите расчет стоимости и получите
+								<br>прототип главной страницы
+								<b>в подарок!</b>
+							</div>
+							<div class="action">
+								<a class="btn-blue modal-trigger" data-modal-heading="Получить смету" href="#modal">Получить смету</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="m_full-quotes space-large-double">
+				<div class="container-fluid">
+					<div class="paragraph large italic center">После того, как сайт создан, работа не заканчивается.
+						<br>Мы поддерживаем наши проекты в течение всего их жизненного цикла.</div>
+					<div class="details paragraph large center">
+						<a href="#">
+							<span>Комплексное развитие сайта</span>
+							<i class="icon-arrow"></i>
+						</a>
+					</div>
+				</div>
+			</div>
+			<div class="m_lead-portfolio">
+				<div class="section-title">
+					<h2>Наше портфолио</h2>
+				</div>
+				<div class="full-carousel">
+					<div class="item">
+						<div class="image" style="background-image: url('images/portfolio/1.jpg')"></div>
+						<div class="vertical-outer">
+							<div class="vertical-inner">
+								<div class="title">
+									<a href="#">
+										<span>Сайт агенства недвижимости
+											<br>«Ваш Дом»</span>
+									</a>
+								</div>
+								<div class="details">
+									<a class="btn-white" href="#">Подробнее</a>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="item">
+						<div class="image" style="background-image: url('images/portfolio/2.jpg')"></div>
+						<div class="vertical-outer">
+							<div class="vertical-inner">
+								<div class="title">
+									<a href="#">
+										<span>Сайт строительства бассейнов
+											<br>«Gelios Park»</span>
+									</a>
+								</div>
+								<div class="details">
+									<a class="btn-white" href="#">Подробнее</a>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="item">
+						<div class="image" style="background-image: url('images/portfolio/3.jpg')"></div>
+						<div class="vertical-outer">
+							<div class="vertical-inner">
+								<div class="title">
+									<a href="#">
+										<span>Сайт Федерации Дзюдо
+											<br>Ленинградской области «Дзюдо»</span>
+									</a>
+								</div>
+								<div class="details">
+									<a class="btn-white" href="#">Подробнее</a>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="item">
+						<div class="image" style="background-image: url('images/portfolio/4.jpg')"></div>
+						<div class="vertical-outer">
+							<div class="vertical-inner">
+								<div class="title">
+									<a href="#">
+										<span>Сайт безопасные грузоперевозки
+											<br>«Camel»</span>
+									</a>
+								</div>
+								<div class="details">
+									<a class="btn-white" href="#">Подробнее</a>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="item">
+						<div class="image" style="background-image: url('images/portfolio/2.jpg')"></div>
+						<div class="vertical-outer">
+							<div class="vertical-inner">
+								<div class="title">
+									<a href="#">
+										<span>Сайт агенства недвижимости
+											<br>«Ваш Дом»</span>
+									</a>
+								</div>
+								<div class="details">
+									<a class="btn-white" href="#">Подробнее</a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="details">
+					<a class="btn-blue-border" href="#">Смотреть все работы</a>
+				</div>
+			</div>
+		</div>
+		<!-- Footer-->
+		<footer class="m_footer">
+			<div class="container-fluid">
+				<div class="locate">
+					<div class="title">
+						<i class="icon-locate"></i>Наш адрес</div>
+					<div class="desc">Санкт-Петербург,
+						<br> улица Аккуратова, 13, офис 4-6Б</div>
+				</div>
+				<div class="email">
+					<div class="title">
+						<i class="icon-email"></i>E-mail</div>
+					<div class="desc">
+						<a href="#">info@pikmedia.ru</a>
+					</div>
+				</div>
+				<div class="tel">
+					<div class="title">
+						<i class="icon-tel"></i>Телефон</div>
+					<div class="desc">+7 (812) 363-49-59</div>
+				</div>
+				<div class="socials">
+					<div class="title">Мы в соц. сетях!</div>
+					<div class="desc">
+						<a class="fb" href="#"></a>
+						<a class="vk" href="#"></a>
+					</div>
+				</div>
+			</div>
+		</footer>
+		<!-- JS-->
+		<script src="js/jquery.min.js"></script>
+		<script src="js/plugins.js"></script>
+		<script src="js/app.js"></script>
+	</body>
+
+</html>

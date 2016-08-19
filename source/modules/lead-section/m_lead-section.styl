@@ -1,0 +1,184 @@
+.m_lead-section
+  height 100%
+  overflow hidden
+  .text
+    position absolute
+    left 0
+    top 0
+    width 100%
+    height 100%
+    text-align center
+    html.touchevents &,
+    html.IE &
+      position static
+  .logo, h1, .details
+    position relative
+    z-index 10
+  .line-1, .line-2, .ace
+    position absolute
+    top 50%
+    left 50%
+    z-index 5
+    max-width 100%
+    @media screen and (max-height: 760px)
+      top 55%
+    @media screen and (max-height: 600px)
+      top 60%
+    @media screen and (max-height: 530px)
+      top 65%
+    @media screen and (max-height: 500px)
+      top 75%
+    @media screen and (max-height: 380px)
+      top 50%
+  .line-1
+    width 683px
+    height 350px
+    margin-left -(@width/2)
+    margin-top -250px
+    html.no-touchevents &
+      animation line1 12s infinite linear
+    html.touchevents &
+      @media screen and (max-width: 568px)
+        width 350px
+        height 150px
+        margin-left -175px
+        margin-top -175px
+    html.touchevents &,
+    html.no-touchevents &
+      @media screen and (max-height: 700px)
+        width 350px
+        height 150px
+        margin-left -175px
+        margin-top -175px
+      @media screen and (max-height: 380px)
+        margin-top 0px
+  .line-2
+    height 414px
+    width 351px
+    margin-left -(@width/2)
+    margin-top -350px
+    html.no-touchevents &
+      animation line2 8s infinite linear
+    html.touchevents &
+      @media screen and (max-width: 568px)
+        width 215px
+        height 272px
+        margin-top -245px
+        margin-left -100px
+    html.touchevents &,
+    html.no-touchevents &
+      @media screen and (max-height: 700px)
+        width 215px
+        height 272px
+        margin-top -245px
+        margin-left -100px
+      @media screen and (max-height: 380px)
+        margin-top -100px
+  .ace
+    width 385px
+    height 384px
+    margin-left -(@width/2)
+    margin-top -350px
+    html.no-touchevents &
+      animation ace 20s infinite linear
+    html.touchevents &
+      margin-left -230px
+      margin-top -300px
+      @media screen and (max-width: 568px)
+        width 260px
+        height 260px
+        margin-left -150px
+        margin-top -240px
+    html.no-touchevents &
+    html.touchevents &
+      @media screen and (max-height: 700px)
+        width 260px
+        height 260px
+        margin-left -150px
+        margin-top -240px
+      @media screen and (max-height: 380px)
+        margin-top -80px
+  .logo
+    margin-bottom 130px
+    &.preload
+      z-index 3000
+      animation blink 1.25s 3
+    html.touchevents &
+      @media screen and (max-height: 650px)
+        margin-top 60px
+        margin-bottom 130px
+      @media screen and (max-width: 568px)
+        img
+          width 130px
+    html.no-touchevents &
+    html.touchevents &
+      @media screen and (max-height: 760px)
+        margin-top 60px
+      @media screen and (max-height: 700px)
+        margin-top 30px
+        top 30px
+        img
+          width 130px
+      @media screen and (max-height: 600px)
+        margin-top -10px
+      @media screen and (max-height: 600px)
+        margin-top 0
+        top 50px
+      @media screen and (max-height: 530px)
+        margin-bottom 100px
+      @media screen and (max-height: 500px)
+        top 25px
+        margin-bottom 75px
+      @media screen and (max-height: 430px)
+        top 10px
+      @media screen and (max-height: 380px)
+        margin-bottom 0
+  h1
+    color #fff
+    font-weight 600
+    font-size 32px
+    line-height 46px
+    text-shadow 1px 1px 1px rgba(0,0,0,.25)
+    @media screen and (max-width: 640px)
+      font-size 24px
+      line-height 1.2
+      margin-top 90px
+    @media screen and (max-height: 640px)
+      font-size 24px
+      line-height 1.2
+      margin-top 50px
+    @media screen and (max-height: 530px)
+      margin-top 0
+    @media screen and (max-height: 500px)
+      margin-top 0
+    @media screen and (max-height: 380px)
+      display none
+    br.only-mobile
+      display none
+      @media screen and (max-width: 480px)
+        display block
+  .details
+    width 300px
+    height 60px
+    margin 25px auto
+    +below(360px)
+      width 90%
+    @media screen and (max-height: 500px)
+      display none
+  .mouse
+    position absolute
+    left 50%
+    bottom 40px
+    width 20px
+    height 30px
+    background url("../images/mouse.png") no-repeat 0 0
+    cursor pointer
+    animation mouse 1s infinite linear
+    html.touchevents &
+      display none
+    @media screen and (max-height: 750px)
+      display none
+
+.animate
+  .line-1, .line-2, .ace
+    transition all .15s linear

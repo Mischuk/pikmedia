@@ -1,0 +1,187 @@
+extends ../modules/layout/layout.jade
+
+block title
+  title Индивидуальная разработка сайтов
+
+block content
+  .m_full-section
+    .m_breadcrumbs
+      .container-fluid
+        ul
+          li: a(href="#") Главная
+          li: a(href="#") Услуги
+          li: a(href="#") Разработка сайтов
+    .m_personal-develop
+      .container-fluid.full-height
+        .vertical-outer
+          .vertical-inner
+            .intro.center.space-extra-large
+              h1.heading-large Индивидуальная<br class="xs-visible">разработка сайтов
+              .paragraph.large.light Мы разрабатываем целевые страницы, корпоративные сайты, интернет-магазины и промо-сайты
+            .tabs.small-radius.small-shadow
+              .tabs-nav
+                .item.current: a(href="#") Корпоративный сайт
+                .item: a(href="#") Интернет-магазин
+                .item: a(href="#") Промо-сайт
+                .item: a(href="#") Целевая страница
+              .tabs-content.center
+                .item.current
+                  .paragraph.large.light многостраничный сайт для повышения имиджа и привлечения новых клиентов
+                .item
+                  .paragraph.large.light 2 многостраничный сайт для повышения имиджа и привлечения новых клиентов
+                .item
+                  .paragraph.large.light 3 многостраничный сайт для повышения имиджа и привлечения новых клиентов
+                .item
+                  .paragraph.large.light 4 многостраничный сайт для повышения имиджа и привлечения новых клиентов
+            .lead-prices.space-large.center.paragraph.large.light
+              p Стоимость разработки корпоративного сайта на шаблонном решении <b>от 15 000 руб.</b>
+              p Стоимость корпоративного сайта <b>от 90 000 руб.</b>
+    .m_gift
+      .container-fluid.full-height
+        .vertical-outer
+          .vertical-inner
+            .lead Запросите расчет стоимости и получите <br>прототип главной страницы <b>в подарок!</b>
+            .action: a(href="#modal" data-modal-heading="Получить смету").btn-blue.modal-trigger Получить смету
+  .main
+    .m_personal-develop-proccess
+      .container-fluid
+        .section-title.border
+          h2 Как мы работаем
+        article
+          .heading-medium.center Сбор и анализ информации
+          .paragraph.medium.center Прежде чем приступить к работе, мы собираем и анализируем информацию, которая необходима для выполнения проекта. <br><br> На этом важном этапе закладывается основание проекта.
+          .steps.center
+            .title Основные решения, принимаемые на этом этапе:
+            .row
+              .col-sm-3.col-xs-6
+                .item
+                  .icons
+                    i.icon-step-1
+                  .desc Цели и задачи сайта
+              .col-sm-3.col-xs-6
+                .item
+                  .icons
+                    i.icon-step-2
+                  .desc Структура сайта и его <br>возможности
+              .col-sm-3.col-xs-6
+                .item
+                  .icons
+                    i.icon-step-3
+                  .desc Контент
+              .col-sm-3.col-xs-6
+                .item
+                  .icons
+                    i.icon-step-4
+                  .desc Технические решения
+    .m_lead-cases
+      .image.full-abs(style="background-image: url('images/services-bg-1.jpg')")
+      .case.small.center
+        .vertical-outer
+          .vertical-inner
+            h2.medium Cоздаем прототип вашего будущего сайта
+            .paragraph.large.light.large-lh Это помогает нам сделать зрелый, продуманный до мелочей проект, который не нужно будет переделывать через пару месяцев. Именно проектирование снижает стоимость и сокращает сроки всех следующих этапов разработки сайта.
+    .m_lead-cases
+      .image.full-abs(style="background-image: url('images/services-bg-2.jpg')")
+      .case.small.center
+        .vertical-outer
+          .vertical-inner
+            h2.medium На этапе дизайна сайт приобретает законченный вид
+            .paragraph.large.light.large-lh Все элементы и детали интерфейса досконально прорабатываются и гармонично вписываются в единую концепцию проекта. Мы презентуем концепцию дизайна только при личной встрече.
+    .m_personal-develop-proccess
+      .container-fluid
+        .section-title.border
+          h2.small Невидимая для клиента часть работы
+        article
+          .paragraph.center.medium Верстка и программирование выполняется строго по внутренним регламентам <br>на основе согласованного тех. задания и сроков договора. На этих этапах мы запрашиваем <br>у клиентов контент для тестового размещения.
+          .steps.center
+            .row
+              .col-sm-4.col-sm-offset-2
+                .item
+                  .icons
+                    i.icon-hidden-1
+                  .desc Большую часть проектов мы реализуем <br>с помощью 1C:Битрикс, UMI CMS и WordPress
+              .col-sm-4
+                .item
+                  .icons
+                    i.icon-hidden-2
+                  .desc Опыт наших сотрудников и новейшие технологии позволяют реализовывать проекты любой сложности.
+    .m_lead-cases
+      .image.full-abs(style="background-image: url('images/services-bg-3.jpg')")
+      .case.small.center
+        .vertical-outer
+          .vertical-inner
+            h2.medium Мы применяем 2-х ступенчатую систему тестирования
+            .paragraph.large.light.large-lh Данный подход позволяет оперативно устранить возможные шероховатости <br>и представить клиентам полностью законченный проект.
+    .m_personal-develop.clear
+      .container-fluid
+        .intro
+          .section-title.border
+            h2.small Разработка программных интернет решений
+          .paragraph.large.light.large-lh Мы разрабатываем целевые страницы, корпоративные сайты, интернет-магазины и промо-сайты
+        .tabs
+          .tabs-nav
+            .item.current: a(href="#") Корпоративный сайт
+            .item: a(href="#") Интернет-магазин
+            .item: a(href="#") Промо-сайт
+            .item: a(href="#") Целевая страница
+          .tabs-content.center
+            .item.current
+              .paragraph.large.light многостраничный сайт для повышения имиджа и привлечения новых клиентов
+            .item
+              .paragraph.large.light 2 многостраничный сайт для повышения имиджа и привлечения новых клиентов
+            .item
+              .paragraph.large.light 3 многостраничный сайт для повышения имиджа и привлечения новых клиентов
+            .item
+              .paragraph.large.light 4 многостраничный сайт для повышения имиджа и привлечения новых клиентов
+        .lead-prices
+          .paragraph.large.light.center Стоимость разработки корпоративного сайта на шаблонном решении <b>от 15 000 руб.</b>
+          .paragraph.large.light.center Стоимость корпоративного сайта <b>от 90 000 руб.</b>
+    .m_gift
+      .container-fluid.full-height
+        .vertical-outer
+          .vertical-inner
+            .lead Запросите расчет стоимости и получите <br>прототип главной страницы <b>в подарок!</b>
+            .action: a(href="#modal" data-modal-heading="Получить смету").btn-blue.modal-trigger Получить смету
+    .m_full-quotes.space-large-double
+      .container-fluid
+        .paragraph.large.italic.center После того, как сайт создан, работа не заканчивается. <br>Мы поддерживаем наши проекты в течение всего их жизненного цикла.
+        .details.paragraph.large.center
+          a(href="#")
+            span Комплексное развитие сайта
+            i.icon-arrow
+    .m_lead-portfolio
+      .section-title
+        h2 Наше портфолио
+      .full-carousel
+        .item
+          .image(style="background-image: url('images/portfolio/1.jpg')")
+          .vertical-outer
+            .vertical-inner
+              .title: a(href="#"): span Сайт агенства недвижимости <br>«Ваш Дом»
+              .details: a(href="#").btn-white Подробнее
+        .item
+          .image(style="background-image: url('images/portfolio/2.jpg')")
+          .vertical-outer
+            .vertical-inner
+              .title: a(href="#"): span Сайт строительства бассейнов <br>«Gelios Park»
+              .details: a(href="#").btn-white Подробнее
+        .item
+          .image(style="background-image: url('images/portfolio/3.jpg')")
+          .vertical-outer
+            .vertical-inner
+              .title: a(href="#"): span Сайт Федерации Дзюдо <br>Ленинградской области «Дзюдо»
+              .details: a(href="#").btn-white Подробнее
+        .item
+          .image(style="background-image: url('images/portfolio/4.jpg')")
+          .vertical-outer
+            .vertical-inner
+              .title: a(href="#"): span Сайт безопасные грузоперевозки <br>«Camel»
+              .details: a(href="#").btn-white Подробнее
+        .item
+          .image(style="background-image: url('images/portfolio/2.jpg')")
+          .vertical-outer
+            .vertical-inner
+              .title: a(href="#"): span Сайт агенства недвижимости <br>«Ваш Дом»
+              .details: a(href="#").btn-white Подробнее
+      .details
+        a(href="#").btn-blue-border Смотреть все работы

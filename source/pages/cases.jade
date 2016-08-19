@@ -1,0 +1,61 @@
+extends ../modules/layout/layout.jade
+
+block title
+  title Кейсы наших клиентов
+
+block content
+  .main
+    .m_breadcrumbs
+      .container-fluid
+        ul
+          li: a(href="#") Главная
+          li: a(href="#") Агенство
+          li: a(href="#") Кейсы наших клиентов
+    main
+      .container-fluid
+        .content
+          .m_cases
+            .section-title.border.left.medium
+              h1 Кейсы наших клиентов
+            .cases
+              .row
+                .col-sm-12
+                  .case.large
+                    .image.full-abs(style="background-image: url('images/cases/1.jpg')")
+                    .vertical-outer
+                      .vertical-inner
+                        .title Северо-Западный центр <br>судебных экспертиз
+                        .paragraph Как увеличить конверсию  в 2,4 раза при помощи <br>доработки внутренних страниц
+                        .details: a(href="#").btn-white Подробнее
+              .row
+                .col-sm-8
+                  .case
+                    .image.full-abs(style="background-image: url('images/cases/2.jpg')")
+                    .vertical-outer
+                      .vertical-inner
+                        .title Виалон Ойл
+                        .paragraph Разработка промо сайта с интеграцией <br>уникального онлайн сервиса
+                        .details: a(href="#").btn-white Подробнее
+                .col-sm-4
+                  .case.small
+                    .image.url-image(style="background-image: url('images/cases/3.jpg')")
+                    .title: a(href="#"): span Аккорд системс
+                    .paragraph Как сделать «продающий» сайт при небольшом бюджете
+              .row
+                .col-sm-12
+                  .case
+                    .image.full-abs(style="background-image: url('images/cases/4.jpg')")
+                    .vertical-outer
+                      .vertical-inner
+                        .title Гелиос Парк
+                        .paragraph Как привлечь клиентов, когда новый сайт <br>в разработке
+                        .details: a(href="#").btn-white Подробнее
+
+        .sidebar.small-radius
+          ul
+            li: a(href="#"): span Об агентстве
+            li.current: a(href="#"): span Кейсы наших клиентов
+            li: a(href="#"): span Наши публикации
+            li: a(href="#"): span Отзывы наших клиентов
+            li: a(href="#"): span Новости
+            li: a(href="#"): span Контакты

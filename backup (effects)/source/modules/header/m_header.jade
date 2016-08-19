@@ -1,0 +1,58 @@
+// Modals
+#modal.zoom-anim-dialog.mfp-hide
+  .modal-heading Оставить заявку
+  form#form-modal
+    label
+      span.label Ваше имя
+      .input.required: input.text(type="text" placeholder="")
+    label
+      span.label Ваша электронная почта
+      .input.required: input.text(type="email" placeholder="")
+    label
+      span.label Ваш телефон
+      .input.required: input.text(type="tel" placeholder="")
+    label
+      span.label Сообщение
+      .input: textarea
+    .submit: button(type="submit") Отправить
+a(href="#modal-success").modal-trigger.modal-success
+#modal-success.zoom-anim-dialog.mfp-hide
+  .modal-heading Спасибо!<br>Ваша заявка отправлена!
+// Header
+header.m_header.preload
+  .container-fluid
+    .logo
+      a(href="#")
+    nav.nav
+      ul
+        li.current
+          a(href="#")
+            span Агентство
+          ul.dropdown
+            li: a(href="#") Об агентстве
+            li: a(href="#") Наши публикации
+            li: a(href="#") Отзывы наших клиентов
+            li: a(href="#") Новости
+        li
+          a(href="#")
+            span Услуги
+          ul.dropdown
+            li: a(href="#") Об услугах
+            li: a(href="#") Наши Услуги
+            li: a(href="#") Отзывы об услугах
+            li: a(href="#") Об услугах
+            li: a(href="#") Наши Услуги
+            li: a(href="#") Отзывы об услугах
+        li: a(href="#"): span Портфолио
+        li: a(href="#"): span кейсы
+        li: a(href="#"): span Контакты
+    .contacts
+      .address
+        address +7 (812) 363-49-59
+      .callback
+        a(href="#modal" data-modal-heading="Оставить заявку").btn-blue.modal-trigger Оставить заявку
+    .mobile-menu-trigger: span
+
+
+
+

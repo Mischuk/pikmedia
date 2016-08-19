@@ -1,0 +1,58 @@
+.m_personal-complex
+  position relative
+  bg("../images/complex-bg.jpg")
+  padding-bottom 120px
+  @media screen and (max-height: 850px) and (min-width: 992px)
+    padding-bottom 75px
+  @media screen and (max-height: 850px) and (min-width: 992px)
+    padding-bottom 0
+  @media screen and (max-width: 1024px)
+    padding-bottom 60px
+  &:before
+    pseudo-dark-bg(0.8)
+  .mouse
+    mouse()
+    bottom -50px
+  .intro
+    padding-top 60px
+    color #fff
+    @media screen and (max-height: 950px) and (min-width: 992px)
+      padding-top 0
+      padding-bottom 35px
+    @media screen and (max-height: 850px) and (min-width: 992px)
+      padding-bottom 15px
+    h1
+      heading-line()
+  .complex-list
+    position relative
+    padding-top 45px
+    margin-top 45px
+    color #fff
+    text-align center
+    @media screen and (max-height: 850px) and (min-width: 992px)
+      margin-top 15px
+      padding-top 15px
+    &:after
+      content ''
+      width 970px
+      height 1px
+      background rgba(255,255,255,.6)
+      position absolute
+      left 50%
+      margin-left -(@width/2)
+      top 0
+      @media screen and (max-width: 1024px)
+        width 100%
+        left 0
+        margin-left 0
+    .col-xs-6
+      @media screen and (max-width: 420px)
+        width 100%
+    .heading-small
+      margin-bottom 45px
+    .item
+      .icon
+        height 100px
+      .desc
+        @media screen and (max-width: 768px)
+          margin-bottom 25px

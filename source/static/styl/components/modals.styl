@@ -1,0 +1,98 @@
+.zoom-anim-dialog
+  position relative
+  border-radius 5px
+  border 3px solid #fff
+  background none
+  padding 10px
+  max-width 625px
+  margin 40px auto
+  @media screen and (max-width: 640px)
+    border none
+    background #fff
+    padding 0
+  .checkbox
+    display none
+  .mfp-close
+    right 10px
+    top 10px
+    font-size 48px
+    font-weight 100
+    font-family 'Open Sans', sans-serif
+    opacity .22
+    @media screen and (max-width: 640px)
+      right 5px
+      top 5px
+    &:hover
+      opacity 1
+  .modal-wrap
+    background #fff
+    border-radius 5px
+    padding 0 100px 70px
+    @media screen and (max-width: 640px)
+      background none
+      padding 0 50px 25px
+    @media screen and (max-width: 420px)
+      padding 0 15px 45px
+  .section-title
+    padding-top 70px
+    background none
+    @media screen and (max-width: 768px)
+      margin-bottom 25px
+    h2
+      font-size 36px
+      padding-bottom 25px
+      @media screen and (max-width: 768px)
+        padding-bottom 0
+#modal, #modal-success
+  .modal-heading
+    font-weight 600
+    text-align center
+    color $blue
+    text-transform uppercase
+    font-size 24px
+    margin-bottom 20px
+  form
+    label
+      display block
+      margin-bottom 20px
+      .label
+        display block
+        margin-bottom 5px
+      input
+        height 60px
+        line-height 60px
+        padding 0 20px
+        &.highlight
+          border-color red
+      textarea,
+      input
+        anim()
+        width 100%
+        border 1px solid #dcdcdc
+        text-align center
+        border-radius 25px
+        &:focus
+          border-color #393939
+          text-align left
+      textarea
+        padding 20px
+        height 120px
+        resize none
+    .submit
+      button
+        background #fff
+        width 100%
+        text-shadow none
+        box-shadow none
+        height 60px
+        line-height 56px
+        &:hover
+          background $blue
+
+#modal-success
+  .section-title h2,
+  .modal-wrap
+    padding-bottom 0
+  .modal-wrap
+    padding-left 20px
+    padding-right 20px

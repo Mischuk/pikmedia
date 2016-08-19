@@ -1,0 +1,30 @@
+extends ../modules/layout/layout.jade
+
+block title
+  title Наши услуги
+
+block content
+  .m_full-section
+    .m_breadcrumbs
+      .container-fluid
+        ul
+          li: a(href="#") Главная
+          li: a(href="#") Услуги
+    .m_lead-services
+      .section-title.small
+        h2 Наши услуги
+      .list
+        .item
+          .image.left(style="background-image: url('images/services-left-large.jpg')")
+          .wrap
+            .text
+              .title Индвидуальная <br>разработка сайтов
+              .desc Мы разрабатываем корпоративные сайты, <br>интернет-магазины, промо-сайты и целевые страницы <br>решающие бизнес задачи клиентов
+              .details: a(href="#").btn-white Подробнее
+        .item
+          .image.right(style="background-image: url('images/services-right-large.jpg')")
+          .wrap
+            .text
+              .title Комплексное развитие <br>сайта
+              .desc После того, как сайт создан, работа не заканчивается. <br>Мы поддерживаем наши проекты в течение всего их жизненного цикла.
+              .details: a(href="#").btn-white Подробнее

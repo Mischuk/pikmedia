@@ -1,0 +1,102 @@
+extends ../modules/layout/layout.jade
+
+block title
+  title Кейс CSE
+
+block content
+  .main
+    .m_breadcrumbs
+      .container-fluid
+        ul
+          li: a(href="#") Главная
+          li: a(href="#") Агенство
+          li: a(href="#") Кейсы наших клиентов
+          li: a(href="#") Кейс CSE
+    main
+      .container-fluid
+        .content
+          .m_work
+            .section-title.border.left.medium
+              h1 Как увеличить конверсию в 2,4 раза при помощи доработки внутренних страниц
+            article.m_article
+              img(src="images/works/cse/lead.jpg", alt="")
+              h3 Ситуация:
+              p В сентябре 2015 г. к нам обратился новый клиент – «Северо-Западный центр судебных экспертиз» с просьбой провести аудит  сайта и предложить программу по привлечению новых посетителей на сайт.
+              p Сайт был недавно создан и уже заполнен большим объемом контента силами заказчика. При этом внутренние страницы не мотивировали посетителей сделать запрос , так как были переполнены большим объемом специфичного текста.
+              p Информация была плохо читаема и не структурирована. Анализ юзабилити выявил еще несколько серьезных недостатков, которые затрудняли конверсию в запросы и звонки посетителей сайта
+              .before
+                img(src="images/works/cse/before.jpg", alt="")
+              .label Было
+              h3 Выбранное решение:
+              p Задача была в том, чтобы в сжатые сроки увеличить не только количество посетителей сайта, но и повысить показатели конверсии.
+              .after
+                img(src="images/works/cse/after.jpg", alt="")
+              .label Стало
+              p После детального анализа ситуации наши специалисты предложили реализовать следующие мероприятия:
+              .proccess
+                .row
+                  .col-sm-6.col-xs-12
+                    .item
+                      .icon: i.icon-events-1
+                      .paragraph.small Создание четырех внутренних страниц по ключевым услугам в стилистике landing page для более мотивирующей пользователей  подачи информации
+                  .col-sm-6.col-xs-12
+                    .item
+                      .icon: i.icon-events-4
+                      .paragraph.small Разработка рекламной кампании в системах контекстной рекламе Яндекса Директ и Гугл Эдвордс, с приземлением трафика на эти четыре целевые страницы с ключевыми услугами
+                  .col-sm-6.col-xs-12
+                    .item
+                      .icon: i.icon-events-3
+                      .paragraph.small Проведение A/B  тестирования и дальнейшая оптимизация целевых страниц с целью повышения конверсии
+                  .col-sm-6.col-xs-12
+                    .item
+                      .icon: i.icon-events-2
+                      .paragraph.small Глубокая оптимизация и дальнейшее продвижение сайта по семантиченскому ядру из 46 запросов (в основном по высокочастотным и среднечастотным)
+              .results
+                .section-title.small.left
+                  h2.small Результаты
+                .list
+                  .item
+                    .cell
+                      .image: img(src="images/works/cse/layers.png", alt="")
+                      .text
+                        .paragraph На первом этапе были спроектированы и выполнены 4 внутренних страницы.
+                        .paragraph После тестового запуска контекстной рекламы в течение 10 дней мы получили первые результаты.
+                  .item
+                    .cell
+                      .image.mobile: img(src="images/works/cse/1.png", alt="")
+                      .text
+                        .paragraph Конверсия в запросы и звонки составляла 6%. Проведенная web-аналитика позволила выдвинуть одну гипотезу.  Которая стала основой для А/В тестирования.
+                        .paragraph После  проверке новой гипотезы были получены результаты, превысившие прежние показатели конверсии в 2,4 раза!
+                      .image.desktop: img(src="images/works/cse/1.png", alt="")
+                  .item
+                    .cell
+                      .image: img(src="images/works/cse/2.png", alt="")
+                      .text
+                        .paragraph В течение 3 месяцев органический траффик из поисковых систем возрос в 4 раза по сравнению с первым месяцем
+
+        .sidebar.small-radius
+          ul
+            li: a(href="#"): span Об агентстве
+            li.current: a(href="#"): span Кейсы наших клиентов
+            li: a(href="#"): span Наши публикации
+            li: a(href="#"): span Отзывы наших клиентов
+            li: a(href="#"): span Новости
+            li: a(href="#"): span Контакты
+    .m_similar-works.space-large
+      .container-fluid
+        .section-title.small.left
+          h2.small Читайте также
+        .row
+          .col-sm-4.col-xs-12
+            .image: a(href="#" style="background-image: url('images/works/similar/1.jpg')").url-image
+            .title: a(href="#"): span Виалон Ойл
+            .paragraph.small Разработка промо сайта с интеграцией  уникального онлайн сервиса
+          .col-sm-4.col-xs-12
+            .image: a(href="#" style="background-image: url('images/works/similar/2.jpg')").url-image
+            .title: a(href="#"): span Аккорд системс
+            .paragraph.small Разработка промо сайта с интеграцией  уникального онлайн сервиса
+          .col-sm-4.col-xs-12
+            .image: a(href="#" style="background-image: url('images/works/similar/3.jpg')").url-image
+            .title: a(href="#"): span Гелиос Парк
+            .paragraph.small Разработка промо сайта с интеграцией  уникального онлайн сервиса
+

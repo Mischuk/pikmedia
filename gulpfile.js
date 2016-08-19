@@ -14,6 +14,7 @@ var path = require('path');
 var posthtmlAttrsSorter = require('posthtml-attrs-sorter');
 var runSequence = require('run-sequence');
 var rupture = require('rupture');
+var jeet = require('jeet');
 var stylus = require('stylus');
 var jadeInheritance = require('gulp-jade-inheritance');
 var sourcemaps = require('gulp-sourcemaps');
@@ -73,6 +74,7 @@ var options = {
   stylus: {
     use: [
       rupture(),
+      jeet(),
       autoprefixer({
         cascade: false,
         browsers: [
@@ -170,7 +172,7 @@ gulp.task('jade', function() {
 
 // Stylus
 gulp.task('stylus', function () {
-  return gulp.src('source/static/styles/app.styl')
+  return gulp.src('source/static/styl/app.styl')
     .pipe($.plumber(options.plumber))
     .pipe(sourcemaps.init())
     .pipe($.stylus(options.stylus))
@@ -188,7 +190,7 @@ gulp.task('images', function () {
 
 // Fonts
 gulp.task('fonts', function () {
-  return gulp.src('**/*.{eot,ttg,svg,woff}', {cwd: 'source/static/fonts'})
+  return gulp.src('**/*.{eot,ttf,svg,woff,woff2}', {cwd: 'source/static/fonts'})
     .pipe(gulp.dest('dest/fonts'))
     .pipe(connect.reload());
 });
@@ -205,7 +207,7 @@ gulp.task('jsModules', function () {
 });
 
 gulp.task('jsMain', function () {
-  return gulp.src("source/static/javascripts/main.js")
+  return gulp.src("source/static/js/main.js")
     .pipe($.flatten())
     .pipe(gulp.dest("tmp/js"));
 });
@@ -225,14 +227,14 @@ gulp.task('jsBuild', function () {
     .pipe(connect.reload());
 });
 
-gulp.task('jquery', function () {
-  return gulp.src("source/static/javascripts/jquery.min.js")
+gulp.task('jsVendor', function () {
+  return gulp.src(["source/static/js/jquery.min.js", "source/static/js/modernizr.js"])
     .pipe($.flatten())
     .pipe(gulp.dest("dest/js"));
 });
 
 gulp.task('jsPlugins', function () {
-  return gulp.src("source/static/javascripts/**/*.js")
+  return gulp.src(["source/static/js/**/*.js", "!source/static/js/jquery.min.js", "!source/static/js/modernizr.js", "!source/static/js/main.js"])
     .pipe($.plumber(options.plumber))
     .pipe($.concat('plugins.js', { newLine: '\n\n' }))
     .pipe($.flatten())
@@ -240,7 +242,7 @@ gulp.task('jsPlugins', function () {
 });
 
 gulp.task('cssPlugins', function () {
-  return gulp.src("source/static/javascripts/**/*.css")
+  return gulp.src("source/static/js/**/*.css")
     .pipe($.plumber(options.plumber))
     .pipe($.concat('plugins.css', { newLine: '\n\n' }))
     .pipe($.flatten())
@@ -258,10 +260,8 @@ gulp.task('plugins', function () {
 
 gulp.task('js', function () {
   return runSequence(
-    [
-      'jsModules',
-      'jsMain'
-    ],
+    'jsModules',
+    'jsMain',
     'jsBuild'
   );
 });
@@ -274,7 +274,7 @@ gulp.task('dev', function () {
     'stylus',
     'fonts',
     'images',
-    'jquery',
+    'jsVendor',
     'js',
     'plugins',
     'connect',
@@ -312,7 +312,7 @@ gulp.task('build:templates', function() {
     .pipe(gulp.dest('dest'));
 });
 gulp.task('build:styles', function () {
-  return gulp.src(['app.styl'], {cwd: 'source/static/styles'})
+  return gulp.src(['app.styl'], {cwd: 'source/static/styl'})
     .pipe($.stylus(options.stylus))
     .pipe($.cssbeautify(options.cssbeautify))
     .pipe($.csscomb())
@@ -326,8 +326,8 @@ gulp.task('build:images', function () {
     .pipe(gulp.dest('dest/images'));
 });
 gulp.task('build:fonts', function () {
-  return gulp.src('**/*.{eot,ttg,svg,woff}', {cwd: 'source/static/fonts'})
-    .pipe(gulp.dest('dest/assets/fonts'));
+  return gulp.src('**/*.{eot,ttf,svg,woff,woff2}', {cwd: 'source/static/fonts'})
+    .pipe(gulp.dest('dest/fonts'));
 });
 gulp.task('build:js', function () {
   return gulp.src("tmp/js/main.js")
@@ -346,7 +346,7 @@ gulp.task('build:js', function () {
     .pipe(gulp.dest("dest/js"));
 });
 gulp.task('build:pluginsJS', function () {
-  return gulp.src("source/static/javascripts/**/*.js")
+  return gulp.src(["source/static/js/**/*.js", "!source/static/js/jquery.min.js", "!source/static/js/modernizr.js", "!source/static/js/main.js"])
     .pipe($.plumber(options.plumber))
     .pipe($.concat('plugins.js', { newLine: '\n\n' }))
     .pipe($.flatten())
@@ -356,7 +356,7 @@ gulp.task('build:pluginsJS', function () {
     .pipe(gulp.dest("dest/js"));
 });
 gulp.task('build:pluginsCSS', function () {
-  return gulp.src("source/static/javascripts/**/*.css")
+  return gulp.src("source/static/js/**/*.css")
     .pipe($.plumber(options.plumber))
     .pipe($.concat('plugins.css', { newLine: '\n\n' }))
     .pipe($.csscomb())
@@ -378,7 +378,7 @@ gulp.task('build', function () {
     'build:styles',
     'build:images',
     'build:fonts',
-    'jquery',
+    'jsVendor',
     [
       'jsModules',
       'jsMain'
@@ -402,8 +402,8 @@ gulp.task('watch', function () {
   gulp.watch("source/static/images/*.{jpg,gif,svg,png}", ['images']);
   gulp.watch("source/static/images/**/*.{jpg,gif,svg,png}", ['images']);
   gulp.watch("source/modules/**/*.js", ['js']);
-  gulp.watch("source/static/javascripts/**/*.js", ['jsPlugins']);
-  gulp.watch("source/static/javascripts/**/*.css", ['cssPlugins']);
+  gulp.watch("source/static/js/**/*.js", ['jsPlugins']);
+  gulp.watch("source/static/js/**/*.css", ['cssPlugins']);
 });
 
 

@@ -1,0 +1,112 @@
+extends ../modules/layout/layout.jade
+
+block title
+  title Наше портфолио - Внутренняя
+
+block content
+  .m_full-section
+    .m_breadcrumbs
+      .container-fluid
+        ul
+          li: a(href="#") Главная
+          li: a(href="#") Портфолио
+          li: a(href="#") Виалон Ойл
+    .m_portfolio-details
+      .client
+        .header.top-abs.space-medium.center.index-small
+          .heading-large «Виалон Ойл»
+          .site: a(href="#") www.wialon-oil.com
+        .image.full-abs(style="background-image: url('images/portfolio/large-2.jpg')")
+        .container-fluid.full-height
+          .about.small-radius.small-shadow
+            .heading-small Заказчик
+            .paragraph Компания «Виалон Ойл» - поставщик уникальных решений Wvialon Oil Cards и Wialon oil Service. Программные продукты «Виалон Ойл» объединяют в себе все преимущества использования системы мониторинга транспорта и топливных карт, предлагают клиентам уникальные возможности контроля над махинациями с топливом и своевременного оповещения о нелегальных действиях водителей. Также компания предлагает своим клиентам топливные карты ведущих брендов.
+  .main
+    .m_portfolio-details
+      .task.space-large
+        .container-fluid
+          .heading-small Задача
+          .paragraph.italic Клиент обратился к нам за разработкой нового сайта для более презентабельного представления услуг. Компания собиралась интегрировать на сайт внешний сервис, через который клиенты могли бы получать оперативную информацию о текущей ситуации по заказанным услугам. Также компания планировала сделать интерактивную карту автозаправок всех своих партнеров-производителей топлива. С точки зрения администрирования сайта, было пожелание обеспечить удобную работу по редактированию и наполнению контентом. Перед нами стояла задача сделать современный корпоративный сайт, который был бы максимально удобным для клиентов «Виалон Ойл».
+      .proccess
+        .container-fluid
+          .paragraph.medium.space.outer Нами был разработана концепция сайта и подробный интерактивный прототип с живым контентом, который упростил и ускорил этап создания дизайна.
+          .paragraph.medium.space.outer В процессе работы над интерактивным прототипом было проведено несколько этапов тестирования внутренней фокус-группой.  Состоялось несколько сессий обсуждений прототипа и необходимого функционала на рабочей группе, в которую вошли как специалисты агентства «Пикмедиа», так и ключевые лица клиента.
+          .paragraph.medium.space.outer После нескольких редакций интерактивный прототип был утвержден и проект перешел на этапы разработки дизайна и технического задания.
+        .full-image.url-image(style="background-image: url('images/portfolio-inner.jpg')")
+      .result
+        .container-fluid
+          .section-title.border
+            h2.small Реализованный проект
+          .paragraph.medium.space.outer Сайт реализован на UMICMS, редакция Corporate. С точки зрения удобства управлением контентом, сайт полностью удовлетворил нашего заказчика, т. к. на этапе выбора CMSбыло протестировано еще несколько платных и бесплатных CMS.
+          .paragraph.medium.space.outer Сайт интегрирован с внутренним сервисом для клиентов «Виалон Ойл», который показывает всю актуальную информацию о картах и привязанных к ним автомашинам. Т. е. клиент может в любое время выставить лимит на количество топлива, узнать, где находится автомобиль, на каких заправках заправлялся и т. д.
+          .stack-images
+            .row
+              .col-sm-4
+                .image
+                  img(src="images/work/1.jpg" alt="")
+                .paragraph.small.center Главная страница сайта полностью адаптивна под различные экраны устройств.
+              .col-sm-4
+                .image
+                  img(src="images/work/2.jpg" alt="")
+                .paragraph.small.center Главная страница сайта полностью адаптивна под различные экраны устройств.
+              .col-sm-4
+                .image
+                  img(src="images/work/3.jpg" alt="")
+                .paragraph.small.center Главная страница сайта полностью адаптивна под различные экраны устройств.
+      .result
+        .container-fluid
+          p На сайте реализована интерактивная карта. Данные на карту выводятся на основе API с отдельного сервера клиента. Пользователь сайта может отфильтровать метки с автозаправками на карте по различным свойствам, начиная от типа топлива, бренда заправки, заканчивая наличием парковки, кафе и т. д.
+          .stack-images
+            .row
+              .col-sm-4
+                .image
+                  img(src="images/work/4.jpg" alt="")
+                .paragraph.small.center Главная страница сайта полностью адаптивна под различные экраны устройств.
+              .col-sm-4
+                .image
+                  img(src="images/work/5.jpg" alt="")
+                .paragraph.small.center Главная страница сайта полностью адаптивна под различные экраны устройств.
+              .col-sm-4
+                .image
+                  img(src="images/work/6.jpg" alt="")
+                .paragraph.small.center Главная страница сайта полностью адаптивна под различные экраны устройств.
+      .client-resource.space-extra-large
+        .container-fluid
+          .title Посмотреть живой сайт:
+          .site: a(href="#") www.wialon-oil.com
+          .action: a(href="#modal" data-modal-heading="Запросить стоимость проекта").btn-blue.modal-trigger Запросить стоимость <br>подобного проекта
+      .m_lead-portfolio
+        .section-title.small
+          h2.small Смотрите также
+        .full-carousel
+          .item
+            .image(style="background-image: url('images/portfolio/1.jpg')")
+            .vertical-outer
+              .vertical-inner
+                .title: a(href="#"): span Сайт агенства недвижимости <br>«Ваш Дом»
+                .details: a(href="#").btn-white Подробнее
+          .item
+            .image(style="background-image: url('images/portfolio/2.jpg')")
+            .vertical-outer
+              .vertical-inner
+                .title: a(href="#"): span Сайт строительства бассейнов <br>«Gelios Park»
+                .details: a(href="#").btn-white Подробнее
+          .item
+            .image(style="background-image: url('images/portfolio/3.jpg')")
+            .vertical-outer
+              .vertical-inner
+                .title: a(href="#"): span Сайт Федерации Дзюдо <br>Ленинградской области «Дзюдо»
+                .details: a(href="#").btn-white Подробнее
+          .item
+            .image(style="background-image: url('images/portfolio/4.jpg')")
+            .vertical-outer
+              .vertical-inner
+                .title: a(href="#"): span Сайт безопасные грузоперевозки <br>«Camel»
+                .details: a(href="#").btn-white Подробнее
+          .item
+            .image(style="background-image: url('images/portfolio/2.jpg')")
+            .vertical-outer
+              .vertical-inner
+                .title: a(href="#"): span Сайт агенства недвижимости <br>«Ваш Дом»
+                .details: a(href="#").btn-white Подробнее
+

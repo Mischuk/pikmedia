@@ -1,0 +1,89 @@
+extends ../modules/layout/layout.jade
+
+block title
+  title Комплексное развитие сайта
+
+block content
+  .m_full-section
+    .m_breadcrumbs
+      .container-fluid
+        ul
+          li: a(href="#") Главная
+          li: a(href="#") Услуги
+          li: a(href="#") Комплексное развитие сайта
+    .m_personal-complex
+      .container-fluid.full-height
+        .vertical-outer
+          .vertical-inner
+            .intro.center
+              h1.heading-large Комплексное <br class="xs-visible">развитие сайта
+              .paragraph.large.light Сайт, как маркетинговый инструмент  должен приносить  вам пользу. <br>Комплексный и продуманный подход к развитию сайта –  путь к высокой конверсии и лояльности ваших клиентов.
+            .complex-list
+              .heading-small Мы в комплексе решаем следующие задачи:
+              .row
+                .col-sm-3.col-xs-6
+                  .item
+                    .icon
+                      img(src="images/complex-1.png", alt="")
+                    .desc Привлечение потенциальных <br>клиентов на сайт
+                .col-sm-3.col-xs-6
+                  .item
+                    .icon
+                      img(src="images/complex-2.png", alt="")
+                    .desc Повышение удобства <br>пользования сайтом <br>для постоянных клиетнов
+                .col-sm-3.col-xs-6
+                  .item
+                    .icon
+                      img(src="images/complex-3.png", alt="")
+                    .desc Повышение объема <br>повторных продаж <br>для интернет-магазинов
+                .col-sm-3.col-xs-6
+                  .item
+                    .icon
+                      img(src="images/complex-4.png", alt="")
+                    .desc Увелечение конверсии
+            .mouse
+
+  .main
+    .m_full-quotes.space-large-double
+      .container-fluid
+        .paragraph.large.italic.center
+          i.icon-quotes
+          p Наши специалисты глубоко погружаются в особенности вашего бизнеса <br class="md-hidden">и подбирают комплекс мер для развития сайта.
+    .m_personal-complex-proccess
+      .container-fluid
+        .section-title.border
+          h2.small Услуги  входящие в комплекс мер по развитию сайта
+        .steps
+          .step
+            .icons
+              img(src="images/complex-steps-1.png", alt="")
+            .desc Продвижение сайта <br>в поисковых системах
+          .step
+            .icons
+              img(src="images/complex-steps-2.png", alt="")
+            .desc Контекстная <br>реклама
+          .step
+            .icons
+              img(src="images/complex-steps-3.png", alt="")
+            .desc Аудит юзабилити сайта
+          .step
+            .icons
+              img(src="images/complex-steps-4.png", alt="")
+            .desc Редизайн и доработка <br>для повышения конверсии сайта и landing page
+          .step
+            .icons
+              img(src="images/complex-steps-5.png", alt="")
+            .desc Маркетинговый и технический консалтинг
+        .action
+          a(href="#modal" data-modal-heading="Оставить заявку").btn-blue.modal-trigger Отправьте запрос
+    .m_lead-cases
+      .image.full-abs(style="background-image: url('images/case.jpg')")
+      .section-title.small
+        h2.small Кейсы наших клиентов
+      .case.center.space-large
+        .vertical-outer
+          .vertical-inner
+            h2 Северо-Западный центр судебных экспертиз
+            .paragraph.large.light Как увеличить конверсию  в 2,4 раза при помощи доработки внутренних страниц
+            .details
+              a(href="#").btn-white Подробнее

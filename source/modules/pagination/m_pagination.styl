@@ -1,0 +1,36 @@
+.m_pagination
+  .prev
+    transform rotate(180deg)
+  button
+    color $blue
+    font-size 8px
+    border none
+    background none
+  button, a
+    display block
+    width 30px
+    line-height 30px
+    height 30px
+    @media screen and (max-width: 380px)
+      width 25px
+      height 25px
+      line-height 25px
+  ul
+    text-align center
+    width 100%
+    margin-bottom 60px
+    cursor default
+    @media screen and (max-width: 460px)
+      margin-bottom 30px
+  li
+    dib(middle)
+    a
+      color #000
+      &:hover
+        color $blue
+        text-decoration none
+    &.current
+      a
+        background $blue
+        color #fff
+        border-radius 50%

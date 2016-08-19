@@ -1,0 +1,345 @@
+extends ../modules/layout/layout.jade
+
+block title
+  title Наше портфолио
+
+block content
+  .m_full-section
+    .m_breadcrumbs
+      .container-fluid
+        ul
+          li: a(href="#") Главная
+          li: a(href="#") Портфолио
+    .m_portfolio
+      .section-title.small
+        h2 Наше портфолио
+      .portfolio-carousel
+        .portfolio-carousel-single
+          .slide
+            .image.full-abs(style="background-image: url('images/portfolio/large-1.jpg')")
+            .text.index-small.center
+              .vertical-outer
+                .vertical-inner
+                  .wrap-border.small-radius
+                    .wrap.small-radius.space-medium
+                      .heading-medium Сайт агенства недвижимости <br>«Ваш Дом»
+                      .details: a(href="#").btn-white Подробнее
+          .slide
+            .image.full-abs(style="background-image: url('images/portfolio/large-2.jpg')")
+            .text.index-small.center
+              .vertical-outer
+                .vertical-inner
+                  .wrap-border.small-radius
+                    .wrap.small-radius.space-medium
+                      .heading-medium Сайт агенства недвижимости <br>«Ваш Дом»
+                      .details: a(href="#").btn-white Подробнее
+          .slide
+            .image.full-abs(style="background-image: url('images/portfolio/large-1.jpg')")
+            .text.index-small.center
+              .vertical-outer
+                .vertical-inner
+                  .wrap-border.small-radius
+                    .wrap.small-radius.space-medium
+                      .heading-medium Сайт агенства недвижимости <br>«Ваш Дом»
+                      .details: a(href="#").btn-white Подробнее
+          .slide
+            .image.full-abs(style="background-image: url('images/portfolio/large-2.jpg')")
+            .text.index-small.center
+              .vertical-outer
+                .vertical-inner
+                  .wrap-border.small-radius
+                    .wrap.small-radius.space-medium
+                      .heading-medium Сайт агенства недвижимости <br>«Ваш Дом»
+                      .details: a(href="#").btn-white Подробнее
+          .slide
+            .image.full-abs(style="background-image: url('images/portfolio/large-1.jpg')")
+            .text.index-small.center
+              .vertical-outer
+                .vertical-inner
+                  .wrap-border.small-radius
+                    .wrap.small-radius.space-medium
+                      .heading-medium Сайт агенства недвижимости <br>«Ваш Дом»
+                      .details: a(href="#").btn-white Подробнее
+          .slide
+            .image.full-abs(style="background-image: url('images/portfolio/large-2.jpg')")
+            .text.index-small.center
+              .vertical-outer
+                .vertical-inner
+                  .wrap-border.small-radius
+                    .wrap.small-radius.space-medium
+                      .heading-medium Сайт агенства недвижимости <br>«Ваш Дом»
+                      .details: a(href="#").btn-white Подробнее
+          .slide
+            .image.full-abs(style="background-image: url('images/portfolio/large-1.jpg')")
+            .text.index-small.center
+              .vertical-outer
+                .vertical-inner
+                  .wrap-border.small-radius
+                    .wrap.small-radius.space-medium
+                      .heading-medium Сайт агенства недвижимости <br>«Ваш Дом»
+                      .details: a(href="#").btn-white Подробнее
+          .slide
+            .image.full-abs(style="background-image: url('images/portfolio/large-2.jpg')")
+            .text.index-small.center
+              .vertical-outer
+                .vertical-inner
+                  .wrap-border.small-radius
+                    .wrap.small-radius.space-medium
+                      .heading-medium Сайт агенства недвижимости <br>«Ваш Дом»
+                      .details: a(href="#").btn-white Подробнее
+        .portfolio-carousel-thumbs
+          .slide: .vertical-outer: .vertical-inner
+            .image.full-abs(style="background-image: url('images/portfolio/1.jpg')")
+            .text.index-small.center.space-small: a(href="#"): span Сайт агентства недвижимости «Ваш Дом»
+          .slide: .vertical-outer: .vertical-inner
+            .image.full-abs(style="background-image: url('images/portfolio/2.jpg')")
+            .text.index-small.center.space-small: a(href="#"): span Сайт cтроительства бассейнов «Gelios Park»
+          .slide: .vertical-outer: .vertical-inner
+            .image.full-abs(style="background-image: url('images/portfolio/3.jpg')")
+            .text.index-small.center.space-small: a(href="#"): span Сайт Федерации Дзюдо Ленинградской области «Ваш Дом»
+          .slide: .vertical-outer: .vertical-inner
+            .image.full-abs(style="background-image: url('images/portfolio/4.jpg')")
+            .text.index-small.center.space-small: a(href="#"): span Сайт безопасные грузоперевозки «Camel»
+          .slide: .vertical-outer: .vertical-inner
+            .image.full-abs(style="background-image: url('images/portfolio/1.jpg')")
+            .text.index-small.center.space-small: a(href="#"): span Сайт агентства недвижимости «Ваш Дом»
+          .slide: .vertical-outer: .vertical-inner
+            .image.full-abs(style="background-image: url('images/portfolio/2.jpg')")
+            .text.index-small.center.space-small: a(href="#"): span Сайт cтроительства бассейнов «Gelios Park»
+          .slide: .vertical-outer: .vertical-inner
+            .image.full-abs(style="background-image: url('images/portfolio/3.jpg')")
+            .text.index-small.center.space-small: a(href="#"): span Сайт Федерации Дзюдо Ленинградской области «Ваш Дом»
+          .slide: .vertical-outer: .vertical-inner
+            .image.full-abs(style="background-image: url('images/portfolio/4.jpg')")
+            .text.index-small.center.space-small: a(href="#"): span Сайт безопасные грузоперевозки «Camel»
+  .main
+    .details.space-large
+      a(href="#").btn-blue-border.portfolio-all-projects Другие проекты
+    .m_lead-portfolio(style="display: none")
+      .section-title.small
+        h2.small Другие проекты
+      .portfolio-all-projects-nav
+        a(href="#" data-sort="promo").btn-blue-border.small Промо сайты
+        a(href="#" data-sort="compamy").btn-blue-border.small Корпоративные сайты
+        a(href="#" data-sort="ecommerce").btn-blue-border.small Интернет-магазины
+        a(href="#" data-sort="lp").btn-blue-border.small Целевые страницы
+      .full-carousel
+        .item
+          .image(style="background-image: url('images/portfolio/1.jpg')")
+          .vertical-outer
+            .vertical-inner
+              .title: a(href="#"): span Сайт агенства недвижимости <br>«Ваш Дом»
+              .details: a(href="#").btn-white Подробнее
+        .item
+          .image(style="background-image: url('images/portfolio/2.jpg')")
+          .vertical-outer
+            .vertical-inner
+              .title: a(href="#"): span Сайт строительства бассейнов <br>«Gelios Park»
+              .details: a(href="#").btn-white Подробнее
+        .item
+          .image(style="background-image: url('images/portfolio/3.jpg')")
+          .vertical-outer
+            .vertical-inner
+              .title: a(href="#"): span Сайт Федерации Дзюдо <br>Ленинградской области «Дзюдо»
+              .details: a(href="#").btn-white Подробнее
+        .item
+          .image(style="background-image: url('images/portfolio/4.jpg')")
+          .vertical-outer
+            .vertical-inner
+              .title: a(href="#"): span Сайт безопасные грузоперевозки <br>«Camel»
+              .details: a(href="#").btn-white Подробнее
+        .item
+          .image(style="background-image: url('images/portfolio/2.jpg')")
+          .vertical-outer
+            .vertical-inner
+              .title: a(href="#"): span Сайт агенства недвижимости <br>«Ваш Дом»
+              .details: a(href="#").btn-white Подробнее
+      .tags-carousels
+        //1
+        .full-carousel(data-sort="promo")
+          .item
+            .image(style="background-image: url('images/portfolio/1.jpg')")
+            .large-description
+              .project: a(href="#"): span Сайт агентства недвижимости «Ваш Дом»
+              .desc Проснувшись однажды утром после беспокойного сна, Грегор Замза обнаружил, что он у себя в постели превратился в страшное насекомое.
+          .item
+            .image(style="background-image: url('images/portfolio/1.jpg')")
+            .large-description
+              .project: a(href="#"): span Сайт cтроительства бассейнов «Gelios Park»
+              .desc Проснувшись однажды утром после беспокойного сна, Грегор Замза обнаружил, что он у себя в постели превратился в страшное насекомое.
+          .item
+            .image(style="background-image: url('images/portfolio/1.jpg')")
+            .large-description
+              .project: a(href="#"): span Сайт Федерации Дзюдо Ленинградской области
+              .desc Проснувшись однажды утром после беспокойного сна, Грегор Замза обнаружил, что он у себя в постели превратился в страшное насекомое.
+          .item
+            .image(style="background-image: url('images/portfolio/1.jpg')")
+            .large-description
+              .project: a(href="#"): span Сайт агентства недвижимости «Ваш Дом»
+              .desc Проснувшись однажды утром после беспокойного сна, Грегор Замза обнаружил, что он у себя в постели превратился в страшное насекомое.
+          .item
+            .image(style="background-image: url('images/portfolio/1.jpg')")
+            .large-description
+              .project: a(href="#"): span Сайт cтроительства бассейнов «Gelios Park»
+              .desc Проснувшись однажды утром после беспокойного сна, Грегор Замза обнаружил, что он у себя в постели превратился в страшное насекомое.
+          .item
+            .image(style="background-image: url('images/portfolio/1.jpg')")
+            .large-description
+              .project: a(href="#"): span Сайт Федерации Дзюдо Ленинградской области
+              .desc Проснувшись однажды утром после беспокойного сна, Грегор Замза обнаружил, что он у себя в постели превратился в страшное насекомое.
+          .item
+            .image(style="background-image: url('images/portfolio/1.jpg')")
+            .large-description
+              .project: a(href="#"): span Сайт агентства недвижимости «Ваш Дом»
+              .desc Проснувшись однажды утром после беспокойного сна, Грегор Замза обнаружил, что он у себя в постели превратился в страшное насекомое.
+          .item
+            .image(style="background-image: url('images/portfolio/1.jpg')")
+            .large-description
+              .project: a(href="#"): span Сайт cтроительства бассейнов «Gelios Park»
+              .desc Проснувшись однажды утром после беспокойного сна, Грегор Замза обнаружил, что он у себя в постели превратился в страшное насекомое.
+          .item
+            .image(style="background-image: url('images/portfolio/1.jpg')")
+            .large-description
+              .project: a(href="#"): span Сайт Федерации Дзюдо Ленинградской области
+              .desc Проснувшись однажды утром после беспокойного сна, Грегор Замза обнаружил, что он у себя в постели превратился в страшное насекомое.
+        //2
+        .full-carousel(data-sort="compamy")
+          .item
+            .image(style="background-image: url('images/portfolio/2.jpg')")
+            .large-description
+              .project: a(href="#"): span Сайт cтроительства бассейнов «Gelios Park»
+              .desc Проснувшись однажды утром после беспокойного сна, Грегор Замза обнаружил, что он у себя в постели превратился в страшное насекомое.
+          .item
+            .image(style="background-image: url('images/portfolio/2.jpg')")
+            .large-description
+              .project: a(href="#"): span Сайт Федерации Дзюдо Ленинградской области
+              .desc Проснувшись однажды утром после беспокойного сна, Грегор Замза обнаружил, что он у себя в постели превратился в страшное насекомое.
+          .item
+            .image(style="background-image: url('images/portfolio/2.jpg')")
+            .large-description
+              .project: a(href="#"): span Сайт агентства недвижимости «Ваш Дом»
+              .desc Проснувшись однажды утром после беспокойного сна, Грегор Замза обнаружил, что он у себя в постели превратился в страшное насекомое.
+          .item
+            .image(style="background-image: url('images/portfolio/2.jpg')")
+            .large-description
+              .project: a(href="#"): span Сайт cтроительства бассейнов «Gelios Park»
+              .desc Проснувшись однажды утром после беспокойного сна, Грегор Замза обнаружил, что он у себя в постели превратился в страшное насекомое.
+          .item
+            .image(style="background-image: url('images/portfolio/2.jpg')")
+            .large-description
+              .project: a(href="#"): span Сайт Федерации Дзюдо Ленинградской области
+              .desc Проснувшись однажды утром после беспокойного сна, Грегор Замза обнаружил, что он у себя в постели превратился в страшное насекомое.
+          .item
+            .image(style="background-image: url('images/portfolio/2.jpg')")
+            .large-description
+              .project: a(href="#"): span Сайт агентства недвижимости «Ваш Дом»
+              .desc Проснувшись однажды утром после беспокойного сна, Грегор Замза обнаружил, что он у себя в постели превратился в страшное насекомое.
+          .item
+            .image(style="background-image: url('images/portfolio/2.jpg')")
+            .large-description
+              .project: a(href="#"): span Сайт cтроительства бассейнов «Gelios Park»
+              .desc Проснувшись однажды утром после беспокойного сна, Грегор Замза обнаружил, что он у себя в постели превратился в страшное насекомое.
+          .item
+            .image(style="background-image: url('images/portfolio/2.jpg')")
+            .large-description
+              .project: a(href="#"): span Сайт Федерации Дзюдо Ленинградской области
+              .desc Проснувшись однажды утром после беспокойного сна, Грегор Замза обнаружил, что он у себя в постели превратился в страшное насекомое.
+          .item
+            .image(style="background-image: url('images/portfolio/2.jpg')")
+            .large-description
+              .project: a(href="#"): span Сайт агентства недвижимости «Ваш Дом»
+              .desc Проснувшись однажды утром после беспокойного сна, Грегор Замза обнаружил, что он у себя в постели превратился в страшное насекомое.
+        //3
+        .full-carousel(data-sort="ecommerce")
+          .item
+            .image(style="background-image: url('images/portfolio/3.jpg')")
+            .large-description
+              .project: a(href="#"): span Сайт Федерации Дзюдо Ленинградской области
+              .desc Проснувшись однажды утром после беспокойного сна, Грегор Замза обнаружил, что он у себя в постели превратился в страшное насекомое.
+          .item
+            .image(style="background-image: url('images/portfolio/3.jpg')")
+            .large-description
+              .project: a(href="#"): span Сайт агентства недвижимости «Ваш Дом»
+              .desc Проснувшись однажды утром после беспокойного сна, Грегор Замза обнаружил, что он у себя в постели превратился в страшное насекомое.
+          .item
+            .image(style="background-image: url('images/portfolio/3.jpg')")
+            .large-description
+              .project: a(href="#"): span Сайт cтроительства бассейнов «Gelios Park»
+              .desc Проснувшись однажды утром после беспокойного сна, Грегор Замза обнаружил, что он у себя в постели превратился в страшное насекомое.
+          .item
+            .image(style="background-image: url('images/portfolio/3.jpg')")
+            .large-description
+              .project: a(href="#"): span Сайт Федерации Дзюдо Ленинградской области
+              .desc Проснувшись однажды утром после беспокойного сна, Грегор Замза обнаружил, что он у себя в постели превратился в страшное насекомое.
+          .item
+            .image(style="background-image: url('images/portfolio/3.jpg')")
+            .large-description
+              .project: a(href="#"): span Сайт агентства недвижимости «Ваш Дом»
+              .desc Проснувшись однажды утром после беспокойного сна, Грегор Замза обнаружил, что он у себя в постели превратился в страшное насекомое.
+          .item
+            .image(style="background-image: url('images/portfolio/3.jpg')")
+            .large-description
+              .project: a(href="#"): span Сайт cтроительства бассейнов «Gelios Park»
+              .desc Проснувшись однажды утром после беспокойного сна, Грегор Замза обнаружил, что он у себя в постели превратился в страшное насекомое.
+          .item
+            .image(style="background-image: url('images/portfolio/3.jpg')")
+            .large-description
+              .project: a(href="#"): span Сайт Федерации Дзюдо Ленинградской области
+              .desc Проснувшись однажды утром после беспокойного сна, Грегор Замза обнаружил, что он у себя в постели превратился в страшное насекомое.
+          .item
+            .image(style="background-image: url('images/portfolio/3.jpg')")
+            .large-description
+              .project: a(href="#"): span Сайт агентства недвижимости «Ваш Дом»
+              .desc Проснувшись однажды утром после беспокойного сна, Грегор Замза обнаружил, что он у себя в постели превратился в страшное насекомое.
+          .item
+            .image(style="background-image: url('images/portfolio/3.jpg')")
+            .large-description
+              .project: a(href="#"): span Сайт cтроительства бассейнов «Gelios Park»
+              .desc Проснувшись однажды утром после беспокойного сна, Грегор Замза обнаружил, что он у себя в постели превратился в страшное насекомое.
+        //4
+        .full-carousel(data-sort="lp")
+          .item
+            .image(style="background-image: url('images/portfolio/4.jpg')")
+            .large-description
+              .project: a(href="#"): span Сайт агентства недвижимости «Ваш Дом»
+              .desc Проснувшись однажды утром после беспокойного сна, Грегор Замза обнаружил, что он у себя в постели превратился в страшное насекомое.
+          .item
+            .image(style="background-image: url('images/portfolio/4.jpg')")
+            .large-description
+              .project: a(href="#"): span Сайт cтроительства бассейнов «Gelios Park»
+              .desc Проснувшись однажды утром после беспокойного сна, Грегор Замза обнаружил, что он у себя в постели превратился в страшное насекомое.
+          .item
+            .image(style="background-image: url('images/portfolio/4.jpg')")
+            .large-description
+              .project: a(href="#"): span Сайт Федерации Дзюдо Ленинградской области
+              .desc Проснувшись однажды утром после беспокойного сна, Грегор Замза обнаружил, что он у себя в постели превратился в страшное насекомое.
+          .item
+            .image(style="background-image: url('images/portfolio/4.jpg')")
+            .large-description
+              .project: a(href="#"): span Сайт агентства недвижимости «Ваш Дом»
+              .desc Проснувшись однажды утром после беспокойного сна, Грегор Замза обнаружил, что он у себя в постели превратился в страшное насекомое.
+          .item
+            .image(style="background-image: url('images/portfolio/4.jpg')")
+            .large-description
+              .project: a(href="#"): span Сайт cтроительства бассейнов «Gelios Park»
+              .desc Проснувшись однажды утром после беспокойного сна, Грегор Замза обнаружил, что он у себя в постели превратился в страшное насекомое.
+          .item
+            .image(style="background-image: url('images/portfolio/4.jpg')")
+            .large-description
+              .project: a(href="#"): span Сайт Федерации Дзюдо Ленинградской области
+              .desc Проснувшись однажды утром после беспокойного сна, Грегор Замза обнаружил, что он у себя в постели превратился в страшное насекомое.
+          .item
+            .image(style="background-image: url('images/portfolio/4.jpg')")
+            .large-description
+              .project: a(href="#"): span Сайт агентства недвижимости «Ваш Дом»
+              .desc Проснувшись однажды утром после беспокойного сна, Грегор Замза обнаружил, что он у себя в постели превратился в страшное насекомое.
+          .item
+            .image(style="background-image: url('images/portfolio/4.jpg')")
+            .large-description
+              .project: a(href="#"): span Сайт cтроительства бассейнов «Gelios Park»
+              .desc Проснувшись однажды утром после беспокойного сна, Грегор Замза обнаружил, что он у себя в постели превратился в страшное насекомое.
+          .item
+            .image(style="background-image: url('images/portfolio/4.jpg')")
+            .large-description
+              .project: a(href="#"): span Сайт Федерации Дзюдо Ленинградской области
+              .desc Проснувшись однажды утром после беспокойного сна, Грегор Замза обнаружил, что он у себя в постели превратился в страшное насекомое.

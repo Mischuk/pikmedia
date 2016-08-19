@@ -1,0 +1,118 @@
+@font-face {
+  font-family: 'pikmedia';
+  src:
+    url('icons/pikmedia.ttf?npecrr') format('truetype'),
+    url('icons/pikmedia.woff?npecrr') format('woff'),
+    url('icons/pikmedia.svg?npecrr#pikmedia') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+i {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'pikmedia' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-about-1:before {
+  content: "\e900";
+}
+.icon-about-2:before {
+  content: "\e901";
+}
+.icon-about-3:before {
+  content: "\e902";
+}
+.icon-arrow:before {
+  content: "\e903";
+}
+.icon-complex-1:before {
+  content: "\e904";
+}
+.icon-complex-3:before {
+  content: "\e905";
+}
+.icon-complex-4 .path1:before {
+  content: "\e906";
+  color: rgb(1, 1, 1);
+}
+.icon-complex-4 .path2:before {
+  content: "\e907";
+  margin-left: -1.1015625em;
+  color: rgb(1, 1, 1);
+}
+.icon-complex-4 .path3:before {
+  content: "\e908";
+  margin-left: -1.1015625em;
+  color: rgb(0, 0, 0);
+}
+.icon-email:before {
+  content: "\e909";
+}
+.icon-events-1:before {
+  content: "\e90a";
+}
+.icon-events-2:before {
+  content: "\e90b";
+}
+.icon-events-3:before {
+  content: "\e90c";
+}
+.icon-events-4:before {
+  content: "\e90d";
+}
+.icon-gift:before {
+  content: "\e90e";
+}
+.icon-hidden-1:before {
+  content: "\e90f";
+}
+.icon-hidden-2:before {
+  content: "\e910";
+}
+.icon-label:before {
+  content: "\e911";
+}
+.icon-locate:before {
+  content: "\e912";
+}
+.icon-quotes:before {
+  content: "\e913";
+}
+.icon-services-complex-1:before {
+  content: "\e914";
+}
+.icon-services-complex-2:before {
+  content: "\e915";
+}
+.icon-services-complex-3:before {
+  content: "\e916";
+}
+.icon-services-complex-5:before {
+  content: "\e917";
+}
+.icon-step-1:before {
+  content: "\e918";
+}
+.icon-step-2:before {
+  content: "\e919";
+}
+.icon-step-3:before {
+  content: "\e91a";
+}
+.icon-step-4:before {
+  content: "\e91b";
+}
+.icon-tel:before {
+  content: "\e91c";
+}
+

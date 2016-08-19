@@ -1,0 +1,91 @@
+/*!=========================
+      Base grid styles
+==========================*/
+$wrapper = 1200px
+$footer = 150px
+$footerSmall = 250px
+$footerExtraSmall = 350px
+$header = 90px
+
+html, body
+  height 100%
+html
+  position relative
+  min-height 100%
+  background #393939
+body
+  font-family 'Open Sans', sans-serif
+  font-size 16px
+  line-height 1.2
+  color #000
+  background #393939
+  padding-top $header
+  &.fullpage
+    padding-bottom $footer
+    +below(850px)
+      padding-bottom $footerSmall
+    +below(420px)
+      padding-bottom $footerExtraSmall
+    .m_footer
+      position absolute
+      bottom 0
+      left 0
+
+.main
+  position relative
+  background #fff
+.container-fluid
+  position relative
+  width auto
+  max-width $wrapper
+  &.full-height
+    height 100%
+.m_footer
+  height $footer
+  width 100%
+  +below(850px)
+    height $footerSmall
+  +below(420px)
+    height $footerExtraSmall
+.wrapper
+  clearfix()
+  position relative
+  width $wrapper
+  height 100%
+  padding-left 15px
+  padding-right 15px
+  margin-left auto
+  margin-right auto
+
+main
+  clearfix()
+  .content
+    float left
+    width 75%
+    @media screen and (max-width: 1200px)
+      width 70%
+    @media screen and (max-width: 850px)
+      width 100%
+  .sidebar
+    float right
+    width 23%
+    margin-top 50px
+    background #f5f5f5
+    padding 30px
+    margin-bottom 90px
+    @media screen and (max-width: 1200px)
+      width 27%
+    @media screen and (max-width: 992px)
+      padding 15px
+    @media screen and (max-width: 850px)
+      display none
+    li
+      display block
+      padding 5px 0
+      &.current
+        a
+          text-decoration none
+          span
+            color #000
+    link-blue()
+

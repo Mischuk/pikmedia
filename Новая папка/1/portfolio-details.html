@@ -1,0 +1,408 @@
+<!DOCTYPE html>
+<html class="js" lang="ru">
+
+	<head>
+		<title>Наше портфолио - Внутренняя</title>
+		<meta charset="UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta name="msapplication-tap-highlight" content="no">
+		<link type="image/x-icon" href="favicon.ico" rel="icon">
+		<link type="text/css" href="https://fonts.googleapis.com/css?family=Open+Sans:400,400italic,300,600,700&amp;subset=latin,cyrillic" rel="stylesheet">
+		<link href="styles/plugins.css" rel="stylesheet">
+		<link href="styles/app.css" rel="stylesheet">
+		<script src="js/modernizr.js"></script>
+	</head>
+
+	<body style="overflow: hidden">
+		<!-- Modals: Form-->
+		<div class="zoom-anim-dialog mfp-hide" id="modal">
+			<div class="modal-wrap">
+				<div class="section-title small border medium">
+					<h2>Оставить заявку</h2>
+				</div>
+				<form id="form-modal">
+					<label>
+						<div class="input required">
+							<input class="text" type="text" placeholder="Имя">
+						</div>
+					</label>
+					<label>
+						<div class="input required">
+							<input class="text" type="email" placeholder="Email">
+						</div>
+					</label>
+					<label>
+						<div class="input required">
+							<input class="text" type="tel" placeholder="Телефон">
+						</div>
+					</label>
+					<label>
+						<div class="input">
+							<textarea placeholder="Комментарий"></textarea>
+						</div>
+					</label>
+					<div class="checkbox">
+						<input id="type-1" name="type-1" type="checkbox">
+						<label for="type-1">
+							<span class="icon"></span>
+							<span class="label">Индивидуальная разработка</span>
+						</label>
+					</div>
+					<div class="checkbox">
+						<input id="type-2" name="type-2" type="checkbox" checked="checked">
+						<label for="type-2">
+							<span class="icon"></span>
+							<span class="label">Шаблонное решение</span>
+						</label>
+					</div>
+					<div class="submit">
+						<button class="btn-blue-border" type="submit">Отправить</button>
+					</div>
+				</form>
+			</div>
+		</div>
+		<!-- Modals: Success-->
+		<a class="modal-trigger modal-success" href="#modal-success"></a>
+		<div class="zoom-anim-dialog mfp-hide" id="modal-success">
+			<div class="modal-wrap">
+				<div class="section-title medium">
+					<h2>Спасибо!
+						<br>Ваша заявка отправлена!</h2>
+				</div>
+			</div>
+		</div>
+		<!-- Header-->
+		<header class="m_header preload">
+			<div class="container-fluid">
+				<div class="logo">
+					<a href="#"></a>
+				</div>
+				<nav class="nav">
+					<ul>
+						<li class="current">
+							<a href="#">
+								<span>Агентство</span>
+							</a>
+							<ul class="dropdown">
+								<li>
+									<a href="#">Об агентстве</a>
+								</li>
+								<li>
+									<a href="#">Наши публикации</a>
+								</li>
+								<li>
+									<a href="#">Отзывы наших клиентов</a>
+								</li>
+								<li>
+									<a href="#">Новости</a>
+								</li>
+							</ul>
+						</li>
+						<li>
+							<a href="#">
+								<span>Услуги</span>
+							</a>
+							<ul class="dropdown">
+								<li>
+									<a href="#">Об услугах</a>
+								</li>
+								<li>
+									<a href="#">Наши Услуги</a>
+								</li>
+								<li>
+									<a href="#">Отзывы об услугах</a>
+								</li>
+								<li>
+									<a href="#">Об услугах</a>
+								</li>
+								<li>
+									<a href="#">Наши Услуги</a>
+								</li>
+								<li>
+									<a href="#">Отзывы об услугах</a>
+								</li>
+							</ul>
+						</li>
+						<li>
+							<a href="#">
+								<span>Портфолио</span>
+							</a>
+						</li>
+						<li>
+							<a href="#">
+								<span>кейсы</span>
+							</a>
+						</li>
+						<li>
+							<a href="#">
+								<span>Контакты</span>
+							</a>
+						</li>
+					</ul>
+				</nav>
+				<div class="contacts">
+					<div class="address">
+						<address>+7 (812) 363-49-59</address>
+					</div>
+					<div class="callback">
+						<a class="btn-blue modal-trigger" data-modal-heading="Оставить заявку" href="#modal">Оставить заявку</a>
+					</div>
+				</div>
+				<div class="mobile-menu-trigger">
+					<span></span>
+				</div>
+			</div>
+		</header>
+		<div class="m_full-section">
+			<div class="m_breadcrumbs">
+				<div class="container-fluid">
+					<ul>
+						<li>
+							<a href="#">Главная</a>
+						</li>
+						<li>
+							<a href="#">Портфолио</a>
+						</li>
+						<li>
+							<a href="#">Виалон Ойл</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+			<div class="m_portfolio-details">
+				<div class="client">
+					<div class="header top-abs space-medium center index-small">
+						<div class="heading-large">«Виалон Ойл»</div>
+						<div class="site">
+							<a href="#">www.wialon-oil.com</a>
+						</div>
+					</div>
+					<div class="image full-abs" style="background-image: url('images/portfolio/large-2.jpg')"></div>
+					<div class="container-fluid full-height">
+						<div class="about small-radius small-shadow">
+							<div class="heading-small">Заказчик</div>
+							<div class="paragraph">Компания «Виалон Ойл» - поставщик уникальных решений Wvialon Oil Cards и Wialon oil Service. Программные продукты «Виалон Ойл» объединяют в себе все преимущества использования системы мониторинга транспорта и топливных карт, предлагают клиентам
+								уникальные возможности контроля над махинациями с топливом и своевременного оповещения о нелегальных действиях водителей. Также компания предлагает своим клиентам топливные карты ведущих брендов.</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="main">
+			<div class="m_portfolio-details">
+				<div class="task space-large">
+					<div class="container-fluid">
+						<div class="heading-small">Задача</div>
+						<div class="paragraph italic">Клиент обратился к нам за разработкой нового сайта для более презентабельного представления услуг. Компания собиралась интегрировать на сайт внешний сервис, через который клиенты могли бы получать оперативную информацию о текущей ситуации по заказанным
+							услугам. Также компания планировала сделать интерактивную карту автозаправок всех своих партнеров-производителей топлива. С точки зрения администрирования сайта, было пожелание обеспечить удобную работу по редактированию и наполнению контентом.
+							Перед нами стояла задача сделать современный корпоративный сайт, который был бы максимально удобным для клиентов «Виалон Ойл».</div>
+					</div>
+				</div>
+				<div class="proccess">
+					<div class="container-fluid">
+						<div class="paragraph medium space outer">Нами был разработана концепция сайта и подробный интерактивный прототип с живым контентом, который упростил и ускорил этап создания дизайна.</div>
+						<div class="paragraph medium space outer">В процессе работы над интерактивным прототипом было проведено несколько этапов тестирования внутренней фокус-группой. Состоялось несколько сессий обсуждений прототипа и необходимого функционала на рабочей группе, в которую вошли как специалисты
+							агентства «Пикмедиа», так и ключевые лица клиента.</div>
+						<div class="paragraph medium space outer">После нескольких редакций интерактивный прототип был утвержден и проект перешел на этапы разработки дизайна и технического задания.</div>
+					</div>
+					<div class="full-image url-image" style="background-image: url('images/portfolio-inner.jpg')"></div>
+				</div>
+				<div class="result">
+					<div class="container-fluid">
+						<div class="section-title border">
+							<h2 class="small">Реализованный проект</h2>
+						</div>
+						<div class="paragraph medium space outer">Сайт реализован на UMICMS, редакция Corporate. С точки зрения удобства управлением контентом, сайт полностью удовлетворил нашего заказчика, т. к. на этапе выбора CMSбыло протестировано еще несколько платных и бесплатных CMS.</div>
+						<div class="paragraph medium space outer">Сайт интегрирован с внутренним сервисом для клиентов «Виалон Ойл», который показывает всю актуальную информацию о картах и привязанных к ним автомашинам. Т. е. клиент может в любое время выставить лимит на количество топлива, узнать, где находится
+							автомобиль, на каких заправках заправлялся и т. д.</div>
+						<div class="stack-images">
+							<div class="row">
+								<div class="col-sm-4">
+									<div class="image">
+										<img src="images/work/1.jpg" alt>
+									</div>
+									<div class="paragraph small center">Главная страница сайта полностью адаптивна под различные экраны устройств.</div>
+								</div>
+								<div class="col-sm-4">
+									<div class="image">
+										<img src="images/work/2.jpg" alt>
+									</div>
+									<div class="paragraph small center">Главная страница сайта полностью адаптивна под различные экраны устройств.</div>
+								</div>
+								<div class="col-sm-4">
+									<div class="image">
+										<img src="images/work/3.jpg" alt>
+									</div>
+									<div class="paragraph small center">Главная страница сайта полностью адаптивна под различные экраны устройств.</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="result">
+					<div class="container-fluid">
+						<p>На сайте реализована интерактивная карта. Данные на карту выводятся на основе API с отдельного сервера клиента. Пользователь сайта может отфильтровать метки с автозаправками на карте по различным свойствам, начиная от типа топлива, бренда заправки,
+							заканчивая наличием парковки, кафе и т. д.</p>
+						<div class="stack-images">
+							<div class="row">
+								<div class="col-sm-4">
+									<div class="image">
+										<img src="images/work/4.jpg" alt>
+									</div>
+									<div class="paragraph small center">Главная страница сайта полностью адаптивна под различные экраны устройств.</div>
+								</div>
+								<div class="col-sm-4">
+									<div class="image">
+										<img src="images/work/5.jpg" alt>
+									</div>
+									<div class="paragraph small center">Главная страница сайта полностью адаптивна под различные экраны устройств.</div>
+								</div>
+								<div class="col-sm-4">
+									<div class="image">
+										<img src="images/work/6.jpg" alt>
+									</div>
+									<div class="paragraph small center">Главная страница сайта полностью адаптивна под различные экраны устройств.</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="client-resource space-extra-large">
+					<div class="container-fluid">
+						<div class="title">Посмотреть живой сайт:</div>
+						<div class="site">
+							<a href="#">www.wialon-oil.com</a>
+						</div>
+						<div class="action">
+							<a class="btn-blue modal-trigger" data-modal-heading="Запросить стоимость подобного проекта" href="#modal">Запросить стоимость
+								<br>подобного проекта</a>
+						</div>
+					</div>
+				</div>
+				<div class="m_lead-portfolio">
+					<div class="section-title small">
+						<h2 class="small">Смотрите также</h2>
+					</div>
+					<div class="full-carousel">
+						<div class="item">
+							<div class="image" style="background-image: url('images/portfolio/1.jpg')"></div>
+							<div class="vertical-outer">
+								<div class="vertical-inner">
+									<div class="title">
+										<a href="#">
+											<span>Сайт агенства недвижимости
+												<br>«Ваш Дом»</span>
+										</a>
+									</div>
+									<div class="details">
+										<a class="btn-white" href="#">Подробнее</a>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="item">
+							<div class="image" style="background-image: url('images/portfolio/2.jpg')"></div>
+							<div class="vertical-outer">
+								<div class="vertical-inner">
+									<div class="title">
+										<a href="#">
+											<span>Сайт строительства бассейнов
+												<br>«Gelios Park»</span>
+										</a>
+									</div>
+									<div class="details">
+										<a class="btn-white" href="#">Подробнее</a>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="item">
+							<div class="image" style="background-image: url('images/portfolio/3.jpg')"></div>
+							<div class="vertical-outer">
+								<div class="vertical-inner">
+									<div class="title">
+										<a href="#">
+											<span>Сайт Федерации Дзюдо
+												<br>Ленинградской области «Дзюдо»</span>
+										</a>
+									</div>
+									<div class="details">
+										<a class="btn-white" href="#">Подробнее</a>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="item">
+							<div class="image" style="background-image: url('images/portfolio/4.jpg')"></div>
+							<div class="vertical-outer">
+								<div class="vertical-inner">
+									<div class="title">
+										<a href="#">
+											<span>Сайт безопасные грузоперевозки
+												<br>«Camel»</span>
+										</a>
+									</div>
+									<div class="details">
+										<a class="btn-white" href="#">Подробнее</a>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="item">
+							<div class="image" style="background-image: url('images/portfolio/2.jpg')"></div>
+							<div class="vertical-outer">
+								<div class="vertical-inner">
+									<div class="title">
+										<a href="#">
+											<span>Сайт агенства недвижимости
+												<br>«Ваш Дом»</span>
+										</a>
+									</div>
+									<div class="details">
+										<a class="btn-white" href="#">Подробнее</a>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- Footer-->
+		<footer class="m_footer">
+			<div class="container-fluid">
+				<div class="locate">
+					<div class="title">
+						<i class="icon-locate"></i>Наш адрес</div>
+					<div class="desc">Санкт-Петербург,
+						<br> улица Аккуратова, 13, офис 4-6Б</div>
+				</div>
+				<div class="email">
+					<div class="title">
+						<i class="icon-email"></i>E-mail</div>
+					<div class="desc">
+						<a href="#">info@pikmedia.ru</a>
+					</div>
+				</div>
+				<div class="tel">
+					<div class="title">
+						<i class="icon-tel"></i>Телефон</div>
+					<div class="desc">+7 (812) 363-49-59</div>
+				</div>
+				<div class="socials">
+					<div class="title">Мы в соц. сетях!</div>
+					<div class="desc">
+						<a class="fb" href="#"></a>
+						<a class="vk" href="#"></a>
+					</div>
+				</div>
+			</div>
+		</footer>
+		<!-- JS-->
+		<script src="js/jquery.min.js"></script>
+		<script src="js/plugins.js"></script>
+		<script src="js/app.js"></script>
+	</body>
+
+</html>

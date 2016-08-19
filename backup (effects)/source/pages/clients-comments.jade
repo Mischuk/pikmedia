@@ -1,0 +1,52 @@
+extends ../modules/layout/layout.jade
+
+block title
+  title Отзывы наших клиентов
+
+block content
+  .main
+    .m_breadcrumbs
+      .container-fluid
+        ul
+          li: a(href="#") Главная
+          li: a(href="#") Агенство
+          li: a(href="#") Отзывы наших клиентов
+    main
+      .container-fluid
+        .content
+          .m_client-comments
+            .section-title.border.left.medium
+              h2 Отзывы наших клиентов
+            .list
+              .row
+                -
+                  list = ["1.png", "10.png", "3.png", "4.png", "5.png", "6.png", "7.png", "8.png", "9.png", "2.png"]
+                each item in list
+                  .col-sm-6.col-xs-6
+                    .image: img(src='images/clients/'+item, alt="")
+                    .message
+                      .title Заголовок отзыва который может быть длинным в две строки
+                      .paragraph.small Технический прогресс неумолимо накладывает свой отпечаток даже на самые консервативные области человеческой деятельности. Повинуясь ему, мы основательно «перетрясли» стереотипные подходы, казалось бы, в безнадежном деле совершенствования древнейшего теплового прибора.
+                      .username Фамилия Имя, Название компании
+                      .tags
+                        .tag
+                          a(href="#") cmsmagazine.ru
+            .m_pagination
+              ul
+                li: button.prev: i.icon-arrow
+                li: a(href="#") 1
+                li: a(href="#") 2
+                li: a(href="#") 3
+                li.current: a(href="#") 4
+                li: a(href="#") 5
+                li: a(href="#") 6
+                li: a(href="#") 7
+                li: button.next: i.icon-arrow
+        .sidebar.small-radius
+          ul
+            li: a(href="#"): span Об агентстве
+            li: a(href="#"): span Кейсы наших клиентов
+            li: a(href="#"): span Наши публикации
+            li.current: a(href="#"): span Отзывы наших клиентов
+            li: a(href="#"): span Новости
+            li: a(href="#"): span Контакты

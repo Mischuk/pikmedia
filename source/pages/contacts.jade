@@ -5,46 +5,33 @@ block title
 
 block content
   .main
-    .container
-      .row
-        .col-sm-12
-          // Breadcrumbs
-          -
-            var breadcrumbs = [
-              { title: 'Контакты'}
-            ]
-          include ../modules/breadcrumbs/m_breadcrumbs
-          // Contacts form
-          .m_contacts
-            .page-title Контакты
-            article
-              p Тел.: (812) 449-14-30;
-              p E-mail: development@brandt.spb.ru
-              br
-              p Если у вас есть вопрос, предложение или комментарий о  мероприятии, пожалуйста, напишите нам:
-            form
-              .form-row
-                label
-                  .label ФИО:
-                  .input: input.text(type="text" placeholder="")
-              .form-row
-                label
-                  .label Телефон*:
-                  .input: input.mask-tel.text(type="tel" placeholder="Пример: +7 (123) 456-78-90")
-              .form-row
-                label
-                  .label Email:
-                  .input: input.text(type="email" placeholder="")
-              .form-row
-                label
-                  .label Сообщение:
-                  .input.large: textarea.textarea(placeholder="")
-              .form-row
-                label
-                  .label.large Введите текст на картинке
-                  .input.captcha
-                    .captcha-image
-                    .captcha-input
-                      input.text(type="text", placeholder="")
-              .form-row
-                button(type="submit").submit.blue-btn Отправить
+    .m_breadcrumbs
+      .container-fluid
+        ul
+          li: a(href="#") Главная
+          li: a(href="#") Контакты
+    .m_contacts
+      .map.full-abs
+        script(src="http://api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript")
+        #map
+      .container-fluid
+        .info.index-small
+          .wrap-border.small-radius.small-shadow
+            .wrap.small-radius.small-shadow
+              .section-title.border
+                h2.small Контактная информация
+              .row
+                .col-sm-6
+                  .paragraph Адрес: 197341, Санкт-Петербург, улица Аккуратова, д. 13, офис 4-6 Б, Бизнес-центр «Долина Роз»,<br>ст. метро Удельная
+                  .contact Телефон: <div class="single-block">+7 (812) 363-49-59</div>
+                  .image
+                    img(src="images/contacts-1.jpg" alt="")
+                .col-sm-6
+                  .paragraph Мы работаем с 10:00 до 19:00<br>Суббота, воскресенье — выходные дни
+                  .contact
+                    | Эл. почта:
+                    a(href="#") info@pikmedia.ru
+                  .image
+                    img(src="images/contacts-2.jpg" alt="")
+              .action
+                a(href="#modal" data-modal-heading="Связаться с нами").btn-blue-border.modal-trigger Связаться с нами

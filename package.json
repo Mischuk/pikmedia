@@ -1,13 +1,10 @@
 {
-  "name": "gulp-front",
-  "version": "5.2.0",
+  "name": "frontend",
+  "version": "1.0.0",
   "description": "The template for quick start of development with Gulp, Jade and Stylus",
   "keywords": [
     "gulp",
-    "bem",
     "modules",
-    "sprites",
-    "svg",
     "jade",
     "stylus",
     "boilerplate",
@@ -15,25 +12,7 @@
     "project",
     "template"
   ],
-  "homepage": "https://github.com/zoxon/gulp-front",
-  "author": "Velicko Konstantin <zoxon.box@gmail.com> (https://github.com/zoxon)",
-  "license": "MIT",
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/zoxon/gulp-front.git"
-  },
-  "licenses": {
-    "type": "MIT",
-    "url": "https://github.com/zoxon/gulp-front/blob/master/LICENSE"
-  },
-  "bugs": {
-    "url": "https://github.com/zoxon/gulp-front/issues"
-  },
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "amo": "node tools/module/add.js",
-    "rmo": "node tools/module/remove.js"
-  },
+  "homepage": "https://github.com/Mischuk/",
   "engines": {},
   "main": "gulpfile.js",
   "devDependencies": {
@@ -68,6 +47,7 @@
     "gulp-watch": "^4.3.8",
     "gulp-zip": "^3.2.0",
     "jade": "^1.11.0",
+    "jeet": "^6.1.4",
     "jstransformer": "^1.0.0",
     "jstransformer-stylus": "^1.0.0",
     "mkdirp": "^0.5.1",

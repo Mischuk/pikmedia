@@ -1,0 +1,37 @@
+extends ../modules/layout/layout.jade
+
+block title
+  title Контакты
+
+block content
+  .main
+    .m_breadcrumbs
+      .container-fluid
+        ul
+          li: a(href="#") Главная
+          li: a(href="#") Контакты
+    .m_contacts
+      .map.full-abs
+        script(src="http://api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript")
+        #map
+      .container-fluid
+        .info.index-small
+          .wrap-border.small-radius.small-shadow
+            .wrap.small-radius.small-shadow
+              .section-title.border
+                h2.small Контактная информация
+              .row
+                .col-sm-6
+                  .paragraph Адрес: 197341, Санкт-Петербург, улица Аккуратова, д. 13, офис 4-6 Б, Бизнес-центр «Долина Роз»,<br>ст. метро Удельная
+                  .contact Телефон: <div class="single-block">+7 (812) 363-49-59</div>
+                  .image
+                    img(src="images/contacts-1.jpg" alt="")
+                .col-sm-6
+                  .paragraph Мы работаем с 10:00 до 19:00<br>Суббота, воскресенье — выходные дни
+                  .contact
+                    | Эл. почта:
+                    a(href="#") info@pikmedia.ru
+                  .image
+                    img(src="images/contacts-2.jpg" alt="")
+              .action
+                a(href="#modal" data-modal-heading="Оставить заявку").btn-blue-border.modal-trigger Связаться с нами

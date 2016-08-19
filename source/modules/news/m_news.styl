@@ -1,0 +1,59 @@
+.m_news
+  .tags
+    margin-top 20px
+    margin-bottom 60px
+    @media screen and (max-width: 460px)
+      margin-bottom 30px
+    @media screen and (max-width: 460px)
+      margin-top 10px
+
+    .tag
+      position relative
+      margin-right 25px
+      padding-left 25px
+      font-size 14px
+      color #828282
+      &:before
+        icon()
+        content '\e911'
+        position absolute
+        left 0
+        top 50%
+        line-height 14px
+        height 14px
+        margin-top -7px
+      a
+        anim()
+        color $blue
+        border-bottom 1px solid $blue-half
+        &:hover
+          color #000
+          border-color transparent
+          text-decoration none
+  .list
+    border-bottom 1px solid #dcdcdc
+    margin-bottom 60px
+    @media screen and (max-width: 460px)
+      margin-bottom 30px
+    .col-sm-4
+      @media screen and (max-width: 767px)
+        &:nth-child(2n+1)
+          clear left
+      @media screen and (min-width: 768px)
+        &:nth-child(3n+1)
+          clear left
+      @media screen and (max-width: 460px)
+        width 100%
+    .date
+      font-size 14px
+      line-height 1
+      color #828282
+    .title
+      margin 10px 0
+      link-blue()
+    .paragraph
+      margin-bottom 10px
+      &:last-child
+        margin-bottom 60px
+        @media screen and (max-width: 460px)
+          margin-bottom 30px
