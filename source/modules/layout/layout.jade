@@ -12,21 +12,11 @@ html(lang="ru").js
     link(rel="stylesheet" href="styles/plugins.css")
     link(rel="stylesheet" href="styles/app.css")
     script(src='js/modernizr.js')
-  if homepage = true
-    body(style="overflow: hidden")
-      include ../header/m_header
-      block content
-      include ../footer/m_footer
-      // JS
-      script(src='js/jquery.min.js')
-      script(src='js/plugins.js')
-      script(src='js/app.js')
-  else
-    body
-      include ../header/m_header
-      block content
-      include ../footer/m_footer
-      // JS
-      script(src='js/jquery.min.js')
-      script(src='js/plugins.js')
-      script(src='js/app.js')
+  body
+    include ../header/m_header
+    block content
+    include ../footer/m_footer
+    // JS
+    script(src='js/jquery.min.js')
+    script(src='js/plugins.js')
+    script(src='js/app.js')

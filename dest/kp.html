@@ -1,0 +1,711 @@
+<!DOCTYPE html>
+<html class="js" lang="ru">
+
+	<head>
+		<title>Коммерческое предложение</title>
+		<meta charset="UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta name="msapplication-tap-highlight" content="no">
+		<link type="image/x-icon" href="favicon.ico" rel="icon">
+		<link type="text/css" href="https://fonts.googleapis.com/css?family=Open+Sans:400,400italic,300,600,700&amp;subset=latin,cyrillic" rel="stylesheet">
+		<link href="styles/plugins.css" rel="stylesheet">
+		<link href="styles/app.css" rel="stylesheet">
+		<script src="js/modernizr.js"></script>
+	</head>
+
+	<body>
+		<!-- Modals: Form-->
+		<div class="zoom-anim-dialog mfp-hide" id="modal">
+			<div class="modal-wrap">
+				<div class="section-title small border medium">
+					<h2>Оставить заявку</h2>
+				</div>
+				<form id="form-modal">
+					<label>
+						<div class="input required">
+							<input class="text" type="text" placeholder="Имя">
+						</div>
+					</label>
+					<label>
+						<div class="input required">
+							<input class="text" type="email" placeholder="Email">
+						</div>
+					</label>
+					<label>
+						<div class="input required">
+							<input class="text" type="tel" placeholder="Телефон">
+						</div>
+					</label>
+					<label>
+						<div class="input">
+							<textarea placeholder="Комментарий"></textarea>
+						</div>
+					</label>
+					<div class="checkbox">
+						<input id="type-1" name="type-1" type="checkbox">
+						<label for="type-1">
+							<span class="icon"></span>
+							<span class="label">Индивидуальная разработка</span>
+						</label>
+					</div>
+					<div class="checkbox">
+						<input id="type-2" name="type-2" type="checkbox" checked="checked">
+						<label for="type-2">
+							<span class="icon"></span>
+							<span class="label">Шаблонное решение</span>
+						</label>
+					</div>
+					<div class="submit">
+						<button class="btn-blue-border" type="submit">Отправить</button>
+					</div>
+				</form>
+			</div>
+		</div>
+		<!-- Modals: Success-->
+		<a class="modal-trigger modal-success" href="#modal-success"></a>
+		<div class="zoom-anim-dialog mfp-hide" id="modal-success">
+			<div class="modal-wrap">
+				<div class="section-title medium">
+					<h2>Спасибо!
+						<br>Ваша заявка отправлена!</h2>
+				</div>
+			</div>
+		</div>
+		<!-- Header-->
+		<header class="m_header preload">
+			<div class="container-fluid">
+				<div class="logo">
+					<a href="#"></a>
+				</div>
+				<nav class="nav">
+					<ul>
+						<li class="current">
+							<a href="#">
+								<span>Агентство</span>
+							</a>
+							<ul class="dropdown">
+								<li>
+									<a href="#">Об агентстве</a>
+								</li>
+								<li>
+									<a href="#">Наши публикации</a>
+								</li>
+								<li>
+									<a href="#">Отзывы наших клиентов</a>
+								</li>
+								<li>
+									<a href="#">Новости</a>
+								</li>
+							</ul>
+						</li>
+						<li>
+							<a href="#">
+								<span>Услуги</span>
+							</a>
+							<ul class="dropdown">
+								<li>
+									<a href="#">Об услугах</a>
+								</li>
+								<li>
+									<a href="#">Наши Услуги</a>
+								</li>
+								<li>
+									<a href="#">Отзывы об услугах</a>
+								</li>
+								<li>
+									<a href="#">Об услугах</a>
+								</li>
+								<li>
+									<a href="#">Наши Услуги</a>
+								</li>
+								<li>
+									<a href="#">Отзывы об услугах</a>
+								</li>
+							</ul>
+						</li>
+						<li>
+							<a href="#">
+								<span>Портфолио</span>
+							</a>
+						</li>
+						<li>
+							<a href="#">
+								<span>кейсы</span>
+							</a>
+						</li>
+						<li>
+							<a href="#">
+								<span>Контакты</span>
+							</a>
+						</li>
+					</ul>
+				</nav>
+				<div class="contacts">
+					<div class="address">
+						<address>+7 (812) 363-49-59</address>
+					</div>
+					<div class="callback">
+						<a class="btn-blue modal-trigger" data-modal-heading="Оставить заявку" href="#modal">Оставить заявку</a>
+					</div>
+				</div>
+				<div class="mobile-menu-trigger">
+					<span></span>
+				</div>
+			</div>
+		</header>
+		<div class="m_full-section offer">
+			<div class="m_breadcrumbs">
+				<div class="container-fluid">
+					<ul>
+						<li>
+							<a href="#">Главная</a>
+						</li>
+						<li>
+							<a href="#">Услуги</a>
+						</li>
+						<li>
+							<a href="#">Разработка сайтов</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+			<div class="offer-lead">
+				<div class="vertical-outer">
+					<div class="vertical-inner">
+						<div class="logo">
+							<img src="images/kp/logo.png" alt>
+						</div>
+						<div class="title">
+							<h2>Коммерческое предложение</h2>
+							<p>Разработка сайта для компании «Климатвиль»</p>
+						</div>
+						<div class="date">17 апреля 2017 года</div>
+						<div class="mouse"></div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="main">
+			<div class="m_offer">
+				<section>
+					<div class="wrapper">
+						<article>
+							<h2>Уважаемый Владислав!</h2>
+							<p>Мы подготовили коммерческое предложение на разработку интернет-магазина на основе ваших пожеланий. Предлагаем Вам индивидуальную разработку сайта, в которой буду учтены все ваши требования как по функционалу, дизайну и юзабилити.</p>
+							<p>Наша задача – сделать эффективный бизнес-инструмент, который будет более высокого уровня, чем у ваших конкурентов.</p>
+						</article>
+						<div class="section-title">
+							<h2>Индивидуальная разработка
+								<br> интернет-магазина</h2>
+						</div>
+						<div class="responsive-table">
+							<table>
+								<tr>
+									<th>Этап</th>
+									<th>Перечень услуг</th>
+									<th>Стоимость этапа, руб.</th>
+									<th>Сроки раб. дн.</th>
+								</tr>
+								<tr>
+									<td>1</td>
+									<td>Разработка интерактивного прототипа сайта</td>
+									<td>12 000</td>
+									<td>5</td>
+								</tr>
+								<tr>
+									<td>2</td>
+									<td>Разработка индивидуального дизайна страниц и форм</td>
+									<td>от 30 000</td>
+									<td>10</td>
+								</tr>
+								<tr>
+									<td>3</td>
+									<td>Формирование и согласование технического задания на основе разработанного дизайна и брифа</td>
+									<td>7 000</td>
+									<td>5</td>
+								</tr>
+								<tr>
+									<td>4</td>
+									<td>Html-верстка макета в т. ч. адаптивная верстка (определяется от кол-ва и сложности макетов)</td>
+									<td>от 30 000</td>
+									<td>10-12</td>
+								</tr>
+								<tr>
+									<td>5</td>
+									<td>Программирование в т. ч. интеграция с типовой конфигурацией 1С: Управление торговлей (зависит от сложности функционала и определяется после согласования дизайна и ТЗ)</td>
+									<td>12 000</td>
+									<td>12-21</td>
+								</tr>
+								<tr>
+									<td colspan="2">Итого</td>
+									<td>от 127 000</td>
+									<td>42-53</td>
+								</tr>
+							</table>
+						</div>
+						<article>
+							<p>Предлагаем прозрачную и поэтапную систему оплаты, с предоставлением результатов по каждому из завершенных этапов. То есть, каждый этап вы можете оплачивать отдельно.</p>
+							<p>Стоимость может увеличиваться или уменьшаться в зависимости от сложности согласованного прототипа, дизайна и ТЗ.</p>
+							<p>Услуги по разработке контента, наполнению и оптимизации сайта в смету не включены. При необходимости, на данные услуги составляется отдельная смета.</p>
+							<p>Сайт реализуется UMI CMS версия Commerce (лицензия приобретается отдельно)
+								<a href="http://www.umi-cms.ru/editions/commerce/" target="_blank">http://www.umi-cms.ru/editions/commerce/</a>
+							</p>
+							<p>Cтоимость лицензии —
+								<b>34 900 руб.</b>
+							</p>
+						</article>
+					</div>
+					<div class="section-desc">
+						<div class="item">
+							<div class="wrap">
+								<div class="text">
+									<div class="title">Примеры сайтов с индивидуальной разработкой:</div>
+									<ul>
+										<li>
+											<a href="#">pskws.ru</a>
+										</li>
+										<li>
+											<a href="#">www.geliospark.com</a>
+										</li>
+										<li>
+											<a href="#">etparts.ru</a>
+										</li>
+										<li>
+											<a href="#">wialon-oil.com</a>
+										</li>
+										<li>
+											<a href="#">wo.taxi</a>
+										</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+						<div class="item">
+							<div class="wrap">
+								<div class="text">
+									<div class="title">Состав команды:</div>
+									<ul>
+										<li>Проектировщик интерфейсов</li>
+										<li>UI/UX дизайнер</li>
+										<li>Front-end разработчик</li>
+										<li>Программист</li>
+										<li>Менеджер проекта</li>
+										<li>Контент-менеджер</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="wrapper">
+						<article>
+							<h3>Особенности сайта, который вы получите:</h3>
+							<ul>
+								<li>Адаптивный (удобно смотреть на телефонах, планшетах и смартфонах)</li>
+								<li>Современный дизайн и высокий уровень юзабилити (будет актуален -3-5 лет)</li>
+								<li>Удобно управлять и редактировать содержание сайта (продвинутые CMS)</li>
+								<li>Низкая стоимость тех. поддержки и доработок (льготные тарифы для постоянных клиентов)</li>
+							</ul>
+						</article>
+					</div>
+				</section>
+				<section>
+					<div class="wrapper">
+						<div class="section-title">
+							<h2>РАЗРАБОТКА САЙТА НА ОСНОВЕ ГОТОВОГО РЕШЕНИЯ</h2>
+						</div>
+						<article>
+							<p>Сайт разрабатывается на CMS WordPress, в качестве дизайна для сайтов используется шаблон, выкупленный на платном западном marketpalce
+								<a href="http://www.themeforest.net">themeforest.net</a>.
+								<br>Изменения, улучшения и дальнейшие доработки возможны в рамках заданного шаблоном дизайна.</p>
+						</article>
+						<div class="responsive-table">
+							<table>
+								<tr>
+									<th>ЭТАП</th>
+									<th>ПЕРЕЧЕНЬ УСЛУГ</th>
+									<th>СТОИМОСТЬ ЭТАПА, РУБ.</th>
+									<th>СРОКИ РАБ. ДН.</th>
+								</tr>
+								<tr>
+									<td>1</td>
+									<td>Подбор шаблона</td>
+									<td>3 000</td>
+									<td>2</td>
+								</tr>
+								<tr>
+									<td>2</td>
+									<td>Выкуп шаблона</td>
+									<td>5 000</td>
+									<td>1</td>
+								</tr>
+								<tr>
+									<td>3</td>
+									<td>Формирование и согласование технического задания на адаптацию шаблона</td>
+									<td>7 000</td>
+									<td>5</td>
+								</tr>
+								<tr>
+									<td>4</td>
+									<td>Настройка шаблона на cms. Адаптация под задачи заказчика в рамках дизайна и технически реализованных разработчиками шаблона возможностей.
+										<br>Программирование/Тестирование/Отладка сайта.</td>
+									<td>28 000 - 35 000</td>
+									<td>10-12</td>
+								</tr>
+								<tr>
+									<td colspan="2">Итого</td>
+									<td>43 000 - 35 000</td>
+									<td>18-23</td>
+								</tr>
+							</table>
+						</div>
+						<article>
+							<p>В сроки реализации проекта не заложены возможные риски по задержки с согласованием этапов работ со стороны Заказчика.</p>
+							<p>Сайт разрабатывается на системе управления контентом CMS WordPress.</p>
+							<p>Вся работа ведется и оплачивается по-этапно. Стоимость этапов может увеличиваться или уменьшаться в зависимости от объема работ в согласованном ТЗ.</p>
+							<p>Услуги по разработке контента, наполнению и оптимизации сайта в смету не включены. При необходимости, на данные услуги составляется отдельная смета.</p>
+						</article>
+					</div>
+					<div class="section-desc">
+						<div class="item">
+							<div class="wrap">
+								<div class="text">
+									<div class="title">Примеры сайтов с индивидуальной разработкой:</div>
+									<ul>
+										<li>
+											<a href="#">tv-kartina.ru</a>
+										</li>
+										<li>
+											<a href="#">esi.biz</a>
+										</li>
+										<li>
+											<a href="#">etbestcorck.ru</a>
+										</li>
+										<li>
+											<a href="#">secure-word.ru</a>
+										</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+						<div class="item">
+							<div class="wrap">
+								<div class="text">
+									<div class="title">Состав команды:</div>
+									<ul>
+										<li>Дизайнер</li>
+										<li>Программист</li>
+										<li>Менеджер проекта</li>
+										<li>Контент-менеджер</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+					</div>
+				</section>
+				<section>
+					<div class="wrapper">
+						<div class="section-title">
+							<h2>НАПОЛНЕНИЕ САЙТА КОНТЕНТОМ</h2>
+						</div>
+						<div class="responsive-table">
+							<table>
+								<tr>
+									<th>ЭТАП</th>
+									<th>ПЕРЕЧЕНЬ УСЛУГ</th>
+									<th>СТОИМОСТЬ ЭТАПА, РУБ.</th>
+									<th>СРОКИ РАБ. ДН.</th>
+								</tr>
+								<tr>
+									<td>1</td>
+									<td>Наполнение сайта контентом, предоставленным заказазчиком (в зависимости от объема)</td>
+									<td>от 10 000 до 18 000</td>
+									<td>3-7</td>
+								</tr>
+							</table>
+						</div>
+					</div>
+				</section>
+				<section>
+					<div class="wrapper">
+						<div class="section-title">
+							<h2>ПОИСКОВАЯ ОПТИМИЗАЦИЯ САЙТА</h2>
+						</div>
+						<div class="responsive-table">
+							<table>
+								<tr>
+									<th>ЭТАП</th>
+									<th>ПЕРЕЧЕНЬ УСЛУГ</th>
+									<th>СТОИМОСТЬ ЭТАПА, РУБ.</th>
+								</tr>
+								<tr>
+									<td>1</td>
+									<td>Оптимизация сайта под поисковые запросы Яндекс, Гугл</td>
+									<td>16 500 руб.</td>
+								</tr>
+							</table>
+						</div>
+						<article>
+							<p>
+								<b>В стоимость работ включена бесплатная тех. поддержка сайта в объеме 3 часов, в рамках которой можно дорабатывать сайт.</b>
+							</p>
+							<p>В стоимость работ по оптимизации сайта под поисковые запросы входит: разработка seo оптимизированный текстов. Каждый текст не менее 1500 знаков.</p>
+						</article>
+					</div>
+				</section>
+				<section class="bg-gray">
+					<div class="wrapper">
+						<div class="section-title">
+							<h2>Наименование работ, входящих в состав услуги поисковая оптимизация</h2>
+						</div>
+						<article>
+							<ul>
+								<li>Анализ сайта и его характеристик (домен, контент, структура).</li>
+								<li>Распределение запросов по страницам, составление схемы «страница-запрос» для сайта.</li>
+								<li>Составление технического задания для копирайтеров по написанию оптимизированных текстов для сайта.</li>
+								<li>Разработка текстов, добавление готовых текстов на сайт.</li>
+								<li>Добавление сайта на индексацию в поисковые системы, инициализация в сервисах для вебмастеров.</li>
+								<li>Установка систем аналитики для отслеживания статистики сайта. Счетчики Яндекс Метрика и Гугл Аналитикс</li>
+								<li>Подготовка и добавление в корневую директорию сайта специальных файлов sitemap.xml и robots.txt (для роботов поисковых систем).</li>
+								<li>Оптимизация кода страниц и разметки: мета-теги, title, теги выделений и заголовков.</li>
+								<li>Оптимизация рисунков и перелинковка внутренних страниц.</li>
+								<li>Техническая оптимизация сайта: исключение дублей сайта и отдельных страниц, простановка перенаправлений, приведение кода сайта в соответствие требованиям поисковых систем.</li>
+							</ul>
+						</article>
+					</div>
+				</section>
+				<section>
+					<div class="wrapper">
+						<div class="section-title">
+							<h2>ПОИСКОВОЕ ПРОДВИЖЕНИЕ САЙТА</h2>
+						</div>
+						<div class="responsive-table">
+							<table>
+								<tr>
+									<th>ЭТАП</th>
+									<th>ПЕРЕЧЕНЬ УСЛУГ</th>
+									<th>СТОИМОСТЬ ЭТАПА, РУБ.</th>
+								</tr>
+								<tr>
+									<td>1</td>
+									<td>Оптимизация сайта под поисковые запросы Яндекс, Гугл</td>
+									<td>16 500 руб.</td>
+								</tr>
+							</table>
+						</div>
+						<article>
+							<p>
+								<b>Важно!</b>
+								<br>В стоимость услуг продвижения включена бесплатная техническая поддержка и доработки сайта в объеме 3 часов работы в месяц.</p>
+						</article>
+					</div>
+				</section>
+				<section class="bg-gray">
+					<div class="wrapper">
+						<div class="section-title">
+							<h2>Список работ, входящих в услугу SEO продвижения</h2>
+						</div>
+						<article>
+							<ul>
+								<li>
+									<b>Ежемесячная корректировка оптимизации сайта (приведение кода сайта в соответствие требованиям и изменениям в алгоритмах поисковых систем):</b>
+									<ul>
+										<li>корректировка текстов</li>
+										<li>корректировка заголовков, мета и title тегов</li>
+										<li>оптимизация рисунков</li>
+										<li>внутренняя перелинковка страниц</li>
+										<li>оптимизация новых страниц</li>
+									</ul>
+								</li>
+								<li>
+									<b>Наращивание внешней ссылочной массы сайта:</b>
+									<ul>
+										<li>анализ ссылочной массы конкурентов</li>
+										<li>размещение ссылок на популярных внешних ресурсах, в новостях, статьях</li>
+										<li>подготовка текстов ссылок</li>
+										<li>подбор площадок для размещения</li>
+										<li>закупка новых ссылок.</li>
+									</ul>
+								</li>
+								<li>
+									<b>Поддержка продвижения:</b>
+									<ul>
+										<li>проверка и ежемесячная поддержка внешней ссылочной массы</li>
+										<li>проверка текстов сайта на уникальность</li>
+										<li>анализ страниц сайта на предмет дублей</li>
+										<li>проверка сайта на наличия ошибок (битые ссылки, 404 страницы, скорость загрузки)</li>
+										<li>настройка файла robots.txt</li>
+										<li>анализ на наличие фильтров со стороны поисковых систем</li>
+									</ul>
+								</li>
+								<li>
+									<b>Аналитика:</b>
+									<ul>
+										<li>еженедельная проверка позиций</li>
+										<li>анализ статистики сайта</li>
+										<li>анализ юзабилити и вынесение рекомендаций по улучшению сайта</li>
+										<li>подготовка отчетов по статистике и позициям</li>
+									</ul>
+								</li>
+								<li>
+									<b>Ежемесячно клиенту предоставляется отчет по продвижению, который содержит:</b>
+									<ul>
+										<li>Сводку по статистики посещения сайта по ключевым запросам,</li>
+										<li>Отчет по выполненным работам,</li>
+										<li>План по проведению работ на следующий месяц,</li>
+										<li>Общие рекомендации для контент-менеджера компании клиента.</li>
+									</ul>
+								</li>
+							</ul>
+							<p class="left">Отчет направляется клиенту ежемесячно 30 – 31 числа.</p>
+						</article>
+					</div>
+				</section>
+				<section>
+					<div class="wrapper">
+						<div class="section-title">
+							<h2>О НАС</h2>
+						</div>
+						<article>
+							<p>Мы делаем добротные сайты и превращаем их в выгодный инструмент для привлечения клиентов. Наши клиенты – в основном представители среднего бизнеса из Санкт-Петербурга. Мы всегда лично презентуем результаты своей работы. Нас ценят за качество работ
+								и профессиональные отношения с заказчиками.</p>
+							<blockquote>Наш девиз:
+								<span>«Прагматичные интернет-решения»</span>
+							</blockquote>
+						</article>
+						<div class="desc">
+							<article>
+								<p class="left">
+									<b>Это значит, что мы решаем задачи клиентов:</b>
+								</p>
+								<ul>
+									<li>комплексно (на основе маркетингового подхода)</li>
+									<li>без лишних затрат (только нужные в данный момент решения)</li>
+									<li>с максимальной отдачей (постоянно анализируем и дорабатываем сайт и рекламные каналы для повышения отдачи)</li>
+								</ul>
+								<p class="left"> Работаем с 2007 г., входим в SPECIA (Содружество Петербургских цифровых агентств) и во все основные рейтинги разработчиков сайтов по Санкт-Петербургу.</p>
+								<div class="cms">
+									<p>
+										<b> Создаем сайты на популярных CMS:</b>
+									</p>
+									<div class="list">
+										<div class="item">
+											<img src="images/kp/cms-1.png" alt>
+										</div>
+										<div class="item">
+											<img src="images/kp/cms-2.png" alt>
+										</div>
+										<div class="item">
+											<img src="images/kp/cms-3.png" alt>
+										</div>
+									</div>
+								</div>
+								<p>C нашим портфолио можно ознакомится в
+									<a href="#">нашем портфолио</a>
+									<br>C реальными отзывами клиентов можно ознакомиться на авторитетном портале
+									<a href="#">CMS Magazine</a>
+								</p>
+							</article>
+						</div>
+					</div>
+				</section>
+				<section class="design">
+					<div class="item image"></div>
+					<div class="item text">
+						<div class="wrap">
+							<div class="section-title">
+								<h2>Проектирование - основа разработки</h2>
+							</div>
+							<article>
+								<p>Сайт – рабочий инструмент для решения бизнес-задач. Мы сделаем этот инструмент Вашим ценным активом.</p>
+								<p>В разработке сайта важны все этапы - дизайн, верстка и программирование. Мы же делаем особый упор на проектирование. В процессе работы мы вас консультируем и создаем интерактивный прототип вашего будущего сайта. Это помогает нам сделать зрелый,
+									продуманный до мелочей проект, который не нужно будет переделывать через пару месяцев.</p>
+								<p>Именно проектирование снижает стоимость и сокращает сроки всех следующих этапов разработки сайта.</p>
+								<p>
+									<b>Вот несколько примеров интерактивного прототипа:</b>
+								</p>
+								<ul>
+									<li>
+										<a href="#">Сторге.ру</a>
+									</li>
+									<li>
+										<a href="#">Виалон</a>
+									</li>
+									<li>
+										<a href="#">Гелиос Купели</a>
+									</li>
+								</ul>
+							</article>
+						</div>
+					</div>
+				</section>
+				<section class="pluses">
+					<div class="wrapper">
+						<div class="section-title">
+							<h2>Аргументы в пользу сотрудничества</h2>
+						</div>
+						<article>
+							<ul>
+								<li>
+									<i class="icon icon-1"></i> За 7 лет мы сделали более 250 сайтов. За это время мы отладили все этапы разработки сайта. Это гарантирует нашим клиентам высокое качество проекта при жестком соблюдении сроков.</li>
+								<li>
+									<i class="icon icon-2"></i> Среди наших клиентов: «Строительный трест», ГК «СТОРГЕ», «Гелиос-Парк», Группа «ИЛИМ», «Такси 6 миллионов», «Хорошие квартиры».</li>
+								<li>
+									<i class="icon icon-3"></i> Мы работаем с несколькими популярными CMS. Наши клиенты всегда могут выбрать CMS под свой бюджет и задачи.</li>
+								<li>
+									<i class="icon icon-4"></i> Мы работаем поэтапно. После каждого этапа мы предоставляем вам промежуточные результаты работ. Это обеспечивает прозрачность работ и сокращает сроки реализации проекта.</li>
+								<li>
+									<i class="icon icon-5"></i> Наша надежность подтверждена нахождением во всех основных рейтингах разработчиков сайтов и членством в SPECIA (Содружество Петербургских цифровых агентств).</li>
+								<li>
+									<i class="icon icon-6"></i> Мы делаем сайты «под ключ» от проектирования до продвижения. Наши специалисты помогут с оптимизацией сайта и настройкой контекстной рекламы. Это обеспечивает наших клиентов дополнительным преимуществом.</li>
+								<li>
+									<i class="icon icon-7"></i> После разработки мы оказываем услуги по комплексной поддержке сайта. Помогаем сделать сайт еще лучше и эффективнее.</li>
+								<li>
+									<i class="icon icon-8"></i> После запуска, вы получаете 3 месяца бесплатного гарантийного обслуживания сайта</li>
+							</ul>
+						</article>
+						<div class="buttons">
+							<button class="btn-blue">Печать</button>
+							<button class="btn-blue">Сохранить в pdf</button>
+						</div>
+					</div>
+				</section>
+			</div>
+		</div>
+		<!-- Footer-->
+		<footer class="m_footer">
+			<div class="container-fluid">
+				<div class="locate">
+					<div class="title">
+						<i class="icon-locate"></i>Наш адрес</div>
+					<div class="desc">Санкт-Петербург,
+						<br> улица Аккуратова, 13, офис 4-6Б</div>
+				</div>
+				<div class="email">
+					<div class="title">
+						<i class="icon-email"></i>E-mail</div>
+					<div class="desc">
+						<a href="#">info@pikmedia.ru</a>
+					</div>
+				</div>
+				<div class="tel">
+					<div class="title">
+						<i class="icon-tel"></i>Телефон</div>
+					<div class="desc">+7 (812) 363-49-59</div>
+				</div>
+				<div class="socials">
+					<div class="title">Мы в соц. сетях!</div>
+					<div class="desc">
+						<a class="fb" href="#"></a>
+						<a class="vk" href="#"></a>
+					</div>
+				</div>
+			</div>
+		</footer>
+		<!-- JS-->
+		<script src="js/jquery.min.js"></script>
+		<script src="js/plugins.js"></script>
+		<script src="js/app.js"></script>
+	</body>
+
+</html>

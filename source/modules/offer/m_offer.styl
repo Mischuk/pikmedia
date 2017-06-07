@@ -1,0 +1,504 @@
+.m_full-section.offer
+  height 100%
+  min-height 350px
+  @media screen and (min-width: 768px)
+    min-height 550px
+  @media print
+    min-height 0
+    height auto
+    .mouse
+      display none !important
+    .title
+      margin-bottom 0
+    .date
+      position static
+    .logo
+      margin-top 30px
+.offer-lead
+  height 100%
+  background url("../images/section-index.jpg") no-repeat 50% 50%
+  background-size cover
+  text-align center
+  color #fff
+  padding 0 15px
+  .logo
+    height 110px
+    margin-bottom 20px
+    @media screen and (min-width: 768px)
+      height 220px
+      margin-bottom 30px
+    @media screen and (min-width: 1200px)
+      margin-bottom 50px
+    img
+      height 100%
+  .title
+    margin-bottom 85px
+    @media screen and (min-width: 768px)
+      margin-bottom 155px
+    @media screen and (min-width: 992px)
+      margin-bottom 250px
+    h2
+      font-weight 600
+      margin-bottom 0
+      line-height 1
+      @media screen and (min-width: 768px)
+        font-size 46px
+      @media screen and (min-width: 992px)
+        font-size 52px
+    p
+      font-weight 100
+      @media screen and (min-width: 768px)
+        font-size 24px
+  .date
+    font-weight 100
+    position absolute
+    left 0
+    bottom 70px
+    width 100%
+    padding-bottom 30px
+    @media screen and (min-width: 768px)
+      font-size 18px
+    html.touchevents &
+      bottom 0
+    @media screen and (max-height: 750px)
+      bottom 0
+  .mouse
+    position absolute
+    left 50%
+    bottom 40px
+    width 20px
+    height 30px
+    margin-left -10px
+    background url("../images/mouse.png") no-repeat 0 0
+    cursor pointer
+    animation mouse 1s infinite linear
+    html.touchevents &
+      display none
+    @media screen and (max-height: 750px)
+      display none
+.m_offer
+  background #fff
+  h2
+    font-size 22px
+    line-height 1.25
+    font-weight bold
+    text-align center
+    @media screen and (min-width: 480px)
+      font-size 32px
+  h3
+    font-size 18px
+    line-height 1.25
+    font-weight bold
+    text-align center
+    @media screen and (min-width: 480px)
+      font-size 24px
+  section
+    border-bottom 1px solid #f5f5f5
+    padding 15px 0
+    @media screen and (min-width: 768px)
+      padding 30px 0
+    @media screen and (min-width: 922px)
+      padding 45px 0
+    &.bg-gray
+      background #f5f5f5
+      .section-title
+        background #f5f5f5
+  article
+    text-align center
+    font-size 16px
+    line-height 1.7
+    padding-bottom 15px
+    @media screen and (min-width: 480px)
+      font-size 18px
+    @media screen and (min-width: 768px)
+      max-width 800px
+      margin 0 auto
+      padding-bottom 30px
+    @media screen and (min-width: 992px)
+      padding-bottom 45px
+    &:last-child
+      padding-bottom 0
+    a
+      color #0c85aa
+      text-decoration underline
+      &:hover
+        color #333
+      &:active
+        color #000
+      &:visited
+        color #0c85aa
+    h2, h3
+      margin-bottom 15px
+    p
+      font-weight 400
+      margin-top 0
+      margin-bottom 1em
+      &:last-child
+        margin-bottom 0
+      &.left
+        text-align left
+        padding-left 30px
+    blockquote
+      position relative
+      margin 0 auto
+      display inline-block
+      vertical-align middle
+      border-bottom 2px solid #ebebeb
+      padding 15px 0
+      font-style italic
+      font-size 20px
+      line-height 1.2
+      @media screen and (min-width: 768px)
+        font-size 26px
+      @media screen and (min-width: 992px)
+        &:after
+          content ''
+          position absolute
+          left -35px
+          top 10px
+          width 24px
+          height 17px
+          background url("../images/kp/q-1.png") no-repeat 0 0
+        &:before
+          content ''
+          position absolute
+          right -35px
+          bottom 10px
+          width 24px
+          height 17px
+          background url("../images/kp/q-2.png") no-repeat 0 0
+      @media screen and (min-width: 768px)
+        font-size 32px
+      span
+        color #0c85aa
+    > ul
+      text-align left
+      li
+        background url("../images/kp/list.png") no-repeat 0 3px
+        padding-left 30px
+        font-size 16px
+        & + li
+          margin-top 10px
+        ul
+          padding-left 15px
+          margin-bottom 30px
+          padding-top 5px
+          li
+            background none
+            padding-left 0
+            position relative
+            &:before
+              content ''
+              position absolute
+              left -15px
+              top 12px
+              width 4px
+              height 4px
+              background #000
+              border-radius 50%
+  .desc
+    text-align left
+    article
+      max-width 1000px
+    p
+      text-align left
+      font-size 16px
+    p.left
+      padding-left 0
+      font-size 16px
+    ul
+      margin-bottom 15px
+      font-size 16px
+    .cms
+      text-align left
+      font-size 16px
+      padding-top 15px
+      padding-bottom 15px
+      @media screen and (min-width: 768px)
+        padding-top 30px
+        padding-bottom 30px
+      .list
+        .item
+          width 100%
+          display inline-block
+          vertical-align middle
+          text-align center
+          @media screen and (min-width: 480px)
+            width 32%
+          img
+            max-width 100%
+  .wrapper
+    max-width 1200px
+    width 100%
+  .section-title
+    padding 0
+    margin-bottom 15px
+    @media screen and (min-width: 992px)
+      margin-bottom 30px
+    h2
+      text-transform none
+  .responsive-table
+    width 100%
+    overflow auto
+    box-shadow 0 0 5px rgba(0,0,0,.1)
+    margin-bottom 15px
+    @media screen and (min-width: 768px)
+      margin-bottom 30px
+    & + article
+      text-align left
+    table
+      min-width 700px
+      width 100%
+      border 1px solid #dcdcdc
+      th, td
+        padding 25px 15px
+      th
+        border-bottom 2px solid #0c85aa
+        color #0c85aa
+        font-family 'Open Sans'
+        font-size 14px
+        font-weight bold
+        text-transform uppercase
+        line-height 1.5
+      td
+        anim()
+        min-width 90px
+        max-width 500px
+        text-align center
+        border 1px solid #dcdcdc
+        font-family 'Open Sans'
+        font-size 14px
+        line-height 1.5
+        vertical-align top
+        &:first-child + td
+          text-align left
+      tr
+        &:nth-child(even)
+          td
+            background #fafafa
+        &:hover
+          td
+            background #fafafa - 3%
+        &:last-child
+          td
+            background #fff
+            border none
+            text-align center
+            font-weight bold
+            &:first-child
+              text-align right
+              font-size 16px
+              text-transform uppercase
+              color #0c85aa
+        &:nth-child(2)
+          td
+            background #fafafa
+  .section-desc
+    margin-bottom 15px
+    margin-top 15px
+    @media screen and (min-width: 480px)
+      display table
+      width 100%
+    @media screen and (min-width: 768px)
+      margin-bottom 30px
+      margin-top 30px
+    &:last-child
+      margin-bottom 0
+    .item
+      anim()
+      padding 15px
+      background #0d85aa
+      color #fff
+      @media screen and (min-width: 480px)
+        display table-cell
+        vertical-align top
+        width 50%
+        padding 30px 15px
+      @media screen and (min-width: 992px)
+        padding 50px 15px
+      &:hover
+        background #0d85aa - 5%
+      & + .item
+        background #0b6e8d
+        .wrap
+          @media screen and (min-width: 1200px)
+            float left
+            padding-right 30px
+        &:hover
+          background #0b6e8d - 5%
+      a
+        color #fff
+        text-decoration underline
+        &:hover
+          text-decoration none
+      .wrap
+        @media screen and (min-width: 1200px)
+          max-width 600px
+          float right
+          padding-left 30px
+      .title
+        font-weight 600
+        font-size 16px
+        margin-bottom 10px
+        @media screen and (min-width: 768px)
+          font-size 20px
+          margin-bottom 20px
+      ul
+        font-size 14px
+        @media screen and (min-width: 768px)
+          font-size 16px
+        li
+          padding-left 15px
+          background url("../images/kp/list-white.png") no-repeat 0 6px
+          & + li
+            margin-top 15px
+  .design
+    padding-top 0
+    padding-bottom 0
+    @media screen and (min-width: 992px)
+      display table
+      width 100%
+    .image
+      height 240px
+      background url("../images/kp/background.png") no-repeat 50%
+      background-size cover
+      margin-bottom 15px
+      @media screen and (min-width: 992px)
+        height auto
+    .text, .image
+      @media screen and (min-width: 992px)
+        display table-cell
+        vertical-align top
+        width 50%
+    .text
+      .wrap
+        padding-bottom 15px
+        @media screen and (min-width: 768px)
+          padding-bottom 30px
+        @media screen and (min-width: 992px)
+          max-width 600px
+    .section-title
+      h2
+        @media screen and (min-width: 992px)
+          text-align left
+          padding-left 30px
+          padding-top 30px
+    article
+      text-align left
+      padding 0 15px
+      @media screen and (min-width: 992px)
+        padding 0 30px
+      ul
+        li
+          position relative
+          background none
+          padding-left 15px
+          &:before
+            content ''
+            position absolute
+            left 0
+            top 12px
+            width 4px
+            height 4px
+            background #000
+            border-radius 50%
+          a
+            color #0c85aa
+            &:hover
+              color #000
+  .pluses
+    .buttons
+      text-align center
+      @media screen and (min-width: 992px)
+        padding-bottom 40px
+      button
+        font-size 16px
+        font-weight 600
+        text-transform uppercase
+        display block
+        width 100%
+        padding 15px 0
+        line-height 1
+        height auto
+        @media screen and (min-width: 480px)
+          display inline-block
+          vertical-align middle
+          width 46%
+          max-width 300px
+        @media screen and (min-width: 768px)
+          padding 20px 25px
+          margin-left 10px
+          margin-right 10px
+        & + button
+          margin-top 15px
+          @media screen and (min-width: 480px)
+            margin-top 0
+    article
+      max-width 970px
+    ul
+      li
+        font-size 16px
+        padding-left 70px
+        position relative
+        padding-top 15px
+        padding-bottom 15px
+        background none
+        .icon
+          width 50px
+          position absolute
+          left 0
+          top 50%
+          display inline-block
+          vertical-align middle
+          background-image url("../images/kp/icons.png")
+          background-repeat no-repeat
+          &.icon-1
+            background-position 0 0
+            height 50px
+            margin-top -(@height/2)
+          &.icon-2
+            background-position -62px 0
+            height 50px
+            margin-top -(@height/2)
+          &.icon-3
+            background-position -130px 0
+            height 31px
+            margin-top -(@height/2)
+          &.icon-4
+            background-position 0 -68px
+            height 43px
+            margin-top -(@height/2)
+          &.icon-5
+            background-position -92px -68px
+            height 50px
+            margin-top -(@height/2)
+          &.icon-6
+            background-position -159px -68px
+            height 50px
+            margin-top -(@height/2)
+          &.icon-7
+            background-position -6px -140px
+            height 31px
+            margin-top -(@height/2)
+          &.icon-8
+            background-position -85px -140px
+            height 50px
+            margin-top -(@height/2)
+  @media print
+    section.bg-gray
+      background none
+    .section-title
+      background none !important
+    .buttons, .cms
+      display none !important
+    .design,
+    .section-desc
+      max-width 1170px
+      margin 0 auto
+    .section-desc
+      .item
+        background none !important
+        color #000
+        padding-left 0
+        a
+          color #0c85aa

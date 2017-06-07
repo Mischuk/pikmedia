@@ -176,7 +176,7 @@ gulp.task('stylus', function () {
     .pipe($.plumber(options.plumber))
     .pipe(sourcemaps.init())
     .pipe($.stylus(options.stylus))
-    .pipe(sourcemaps.write('.'))
+    .pipe(sourcemaps.write())
     .pipe(gulp.dest('dest/styles'))
     .pipe(connect.reload());
 });
