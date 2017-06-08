@@ -20,9 +20,17 @@ block content
             p Разработка сайта для компании «Климатвиль»
           .date 17 апреля 2017 года
           .mouse
+  .offer-menu
+    .wrapper
+      ul
+        li: a(class="scroll" href="#sec0") Индивидуальная разработка
+        li: a(class="scroll" href="#sec1") Шаблонное решение
+        li: a(class="scroll" href="#sec2") Наполнение контентом
+        li: a(class="scroll" href="#sec3") Поисковая оптимизация
+        li: a(class="scroll" href="#sec4") О нас
   .main
     .m_offer
-      section
+      section#sec0
         .wrapper
           article
             h2 Уважаемый Владислав!
@@ -77,11 +85,11 @@ block content
               .text
                 .title Примеры сайтов с индивидуальной разработкой:
                 ul
-                  li: a(href="#") pskws.ru
-                  li: a(href="#") www.geliospark.com
-                  li: a(href="#") etparts.ru
-                  li: a(href="#") wialon-oil.com
-                  li: a(href="#") wo.taxi
+                  li: a(target="_blank" href="#") pskws.ru
+                  li: a(target="_blank" href="#") www.geliospark.com
+                  li: a(target="_blank" href="#") etparts.ru
+                  li: a(target="_blank" href="#") wialon-oil.com
+                  li: a(target="_blank" href="#") wo.taxi
           .item
             .wrap
               .text
@@ -101,11 +109,11 @@ block content
               li Современный дизайн и высокий уровень юзабилити (будет актуален -3-5 лет)
               li Удобно управлять и редактировать содержание сайта (продвинутые CMS)
               li Низкая стоимость тех. поддержки и доработок (льготные тарифы для постоянных клиентов)
-      section
+      section#sec1
         .wrapper
           .section-title: h2 РАЗРАБОТКА САЙТА НА ОСНОВЕ ГОТОВОГО РЕШЕНИЯ
           article
-            p Сайт разрабатывается на CMS WordPress, в качестве дизайна для сайтов используется шаблон, выкупленный на платном западном marketpalce <a href="http://www.themeforest.net">themeforest.net</a>. <br>Изменения, улучшения и дальнейшие доработки возможны в рамках заданного шаблоном дизайна.
+            p Сайт разрабатывается на CMS WordPress, в качестве дизайна для сайтов используется шаблон, выкупленный на платном западном marketpalce <a target="_blank" href="http://www.themeforest.net">themeforest.net</a>. <br>Изменения, улучшения и дальнейшие доработки возможны в рамках заданного шаблоном дизайна.
           .responsive-table
             table
               tr
@@ -148,10 +156,10 @@ block content
               .text
                 .title Примеры сайтов с индивидуальной разработкой:
                 ul
-                  li: a(href="#") tv-kartina.ru
-                  li: a(href="#") esi.biz
-                  li: a(href="#") etbestcorck.ru
-                  li: a(href="#") secure-word.ru
+                  li: a(target="_blank" href="#") tv-kartina.ru
+                  li: a(target="_blank" href="#") esi.biz
+                  li: a(target="_blank" href="#") etbestcorck.ru
+                  li: a(target="_blank" href="#") secure-word.ru
           .item
             .wrap
               .text
@@ -161,7 +169,7 @@ block content
                   li Программист
                   li Менеджер проекта
                   li Контент-менеджер
-      section
+      section#sec2
         .wrapper
           .section-title: h2 НАПОЛНЕНИЕ САЙТА КОНТЕНТОМ
           .responsive-table
@@ -176,7 +184,7 @@ block content
                 td Наполнение сайта контентом, предоставленным заказазчиком (в зависимости от объема)
                 td от 10 000 до 18 000
                 td 3-7
-      section
+      section#sec3
         .wrapper
           .section-title: h2 ПОИСКОВАЯ ОПТИМИЗАЦИЯ САЙТА
           .responsive-table
@@ -267,7 +275,7 @@ block content
                   li План по проведению работ на следующий месяц,
                   li Общие рекомендации для контент-менеджера компании клиента.
             p.left Отчет направляется клиенту ежемесячно 30 – 31 числа.
-      section
+      section#sec4
         .wrapper
           .section-title: h2 О НАС
           article
@@ -287,7 +295,7 @@ block content
                   .item: img(src="images/kp/cms-1.png" alt="")
                   .item: img(src="images/kp/cms-2.png" alt="")
                   .item: img(src="images/kp/cms-3.png" alt="")
-              p C нашим портфолио можно ознакомится в <a href="#">нашем портфолио</a><br>C реальными отзывами клиентов можно ознакомиться на авторитетном портале <a href="#">CMS Magazine</a>
+              p C нашим портфолио можно ознакомится в <a target="_blank" href="#">нашем портфолио</a><br>C реальными отзывами клиентов можно ознакомиться на авторитетном портале <a target="_blank" href="#">CMS Magazine</a>
       section.design
         .item.image
         .item.text
@@ -299,9 +307,9 @@ block content
               p Именно проектирование снижает стоимость и сокращает сроки всех следующих этапов разработки сайта.
               p: b Вот несколько примеров интерактивного прототипа:
               ul
-                li: a(href="#") Сторге.ру
-                li: a(href="#") Виалон
-                li: a(href="#") Гелиос Купели
+                li: a(target="_blank" href="#") Сторге.ру
+                li: a(target="_blank" href="#") Виалон
+                li: a(target="_blank" href="#") Гелиос Купели
       section.pluses
         .wrapper
           .section-title: h2 Аргументы в пользу сотрудничества
@@ -315,6 +323,6 @@ block content
               li <i class="icon icon-6"></i> Мы делаем сайты «под ключ» от проектирования до продвижения. Наши специалисты помогут с оптимизацией сайта и настройкой контекстной рекламы.  Это обеспечивает наших клиентов дополнительным преимуществом.
               li <i class="icon icon-7"></i> После разработки мы оказываем услуги по комплексной поддержке сайта. Помогаем сделать сайт еще лучше и эффективнее.
               li <i class="icon icon-8"></i> После запуска,  вы получаете 3 месяца бесплатного гарантийного  обслуживания сайта
-          .buttons
+          .buttons.fixed-pluses-buttons
             button.btn-blue Печать
             button.btn-blue Сохранить в pdf

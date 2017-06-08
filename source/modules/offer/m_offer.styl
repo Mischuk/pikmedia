@@ -76,8 +76,39 @@
       display none
     @media screen and (max-height: 750px)
       display none
+.offer-menu
+  anim()
+  position fixed
+  left 0
+  top 60px
+  width 100%
+  background #393939
+  z-index 200
+  transform translateY(-150%)
+  display none
+  &.active
+    transform translateY(0%)
+  @media screen and (min-width: 1200px)
+    display block
+  ul
+    display table
+    width 100%
+    text-align center
+    li
+      display table-cell
+      vertical-align middle
+      a
+        anim()
+        color #fff
+        padding 15px
+        display inline-block
+        vertical-align middle
+        text-decoration none
+        &:hover
+          color $blue
 .m_offer
   background #fff
+  overflow hidden
   h2
     font-size 22px
     line-height 1.25
@@ -407,10 +438,28 @@
             &:hover
               color #000
   .pluses
+    @media screen and (min-width: 480px)
+      .fixed-pluses-buttons
+        anim()
+        position fixed
+        left 0
+        bottom 0%
+        width 100%
+        z-index 120
+        transform translateY(100%)
+        &.active
+          transform translateY(0%)
+          opacity .9
+          &:hover
+            opacity 1
+        &.static
+          position static
+          transform translateY(0%)
+          opacity 1
     .buttons
       text-align center
-      @media screen and (min-width: 992px)
-        padding-bottom 40px
+      padding-bottom 20px
+      padding-top 20px
       button
         font-size 16px
         font-weight 600
@@ -444,7 +493,7 @@
         padding-bottom 15px
         background none
         .icon
-          width 50px
+          width 54px
           position absolute
           left 0
           top 50%
